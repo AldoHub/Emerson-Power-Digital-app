@@ -1,0 +1,495 @@
+{
+    "resources": [
+       {
+        "Wind Fields" : {
+            "book_type": "ebook",
+            "images" : [
+                "dafe40ca-3510-4009-969b-d317905dc502-0.jpg",
+                "dafe40ca-3510-4009-969b-d317905dc502-1.jpg",
+                "dafe40ca-3510-4009-969b-d317905dc502-2.jpg",
+                "dafe40ca-3510-4009-969b-d317905dc502-3.jpg"
+            ],
+            "file": [
+                "Emerson_Blue Hydrogen_Increasing_the_Viability_of_Blue_Hydrogen_ebook"
+            ],
+            "content" : {
+                "main_title": "Blue Hydrogen", 
+                "title": "Increasing the Viability of Blue Hydrogen",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Blue Hydrogen_Increasing_the_Viability_of_Blue_Hydrogen_ebook"
+            } 
+        }
+       },{
+        "Advanced Chemical Recycling" : {
+            "book_type": "white paper",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Electric Vehicle Battery Manufacturing" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "EVB Recycling Facility" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Chemical Plant" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Electrolysis Plant" : {
+            "book_type": "white paper",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Refueling Station" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Power Plant" : {
+            "book_type": "white paper",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Utility Company" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Offshore" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Gas Processing Plant" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "LNG" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Refinery" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Green Diesel Facility" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Renewable Natural Gas" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Blue Hydrogen" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Carbon Capture Process" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       }, {
+        "Steam Methane Reformer" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       },
+       {
+        "Carbon Capture Sequestration" : {
+            "book_type": "ebook",
+            "images" : [
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-0.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-1.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-2.jpg",
+                "0e169810-01c1-41d5-a90c-2fef2c95f5cb-3.jpg"
+            ],
+            "file": [
+                "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            ],
+            "content" : {
+                "main_title": "Carbon Main Title", 
+                "title": "Refining Green Diesel",
+                "content": "Fusce nec ornare augue, eu tincidunt sem. Suspendisse et pulvinar ligula. Maecenas elementum fringilla odio eget dapibus. Curabitur erat mauris, commodo vel ornare ac, sollicitudin vel nisi. Integer in egestas neque, a porttitor erat. Suspendisse quis orci ut odio maximus fermentum sed eget lorem. Donec blandit erat a massa laoreet tristique. Mauris interdum turpis eget nisl semper aliquet. Sed sagittis nulla eu ex gravida posuere. Maecenas molestie tincidunt facilisis. Sed a ullamcorper dolor.",
+                "qr": "Emerson_Carbon Capture_Carbon_Capture_eBook_2021"
+            }
+        }
+       }
+
+    ],
+    "cases" : [
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 0
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 3
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 4
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 6
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 7
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 9
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 11
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 12
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 13
+            }
+        },
+        {
+            "Case Study VentureGlobal LNG" :{
+                "images" : [
+                    "Case-Study_Venture-Global-LNG.jpg"
+                ],
+                "file": [
+                    "Case-Study_Venture-Global-LNG"
+                ],
+                "index": 15
+            }
+        }
+    ]
+}

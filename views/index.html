@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerson Energy Transition</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+    <link href="../public/css/styles.css" rel="stylesheet" />
+    <!--<link href="../public/css/wide.css" rel="stylesheet" />-->
+
+</head>
+<body>
+
+    <!--Energy Transition Background V9.jpg-->
+    <div class="main-container">
+        
+        <!-- left sidebar - resources -->
+        <div class="sidebar bar">
+            <h2 class="sidebar-title">
+                Explore More
+            </h2>
+            <div class="sidebar-content">
+                <div class="types-selector">
+                    <p data-type="resources">RESOURCE</p>
+                    <p data-type="cases">CASE STUDY</p>
+                </div>
+                <div class="types-assets">
+                    <!-- content will be generated dynamically depending on the type-->
+                </div>
+            </div>    
+            <div class="handle"><img src="../public/images/hamburger.svg" /></div>
+           <div class="back-arrow"><img src="../public/images/back.png" /></div>
+        </div>
+ 
+        <!-- right sidebar -->
+        <div class="personal-space bar">
+            <h2 class="sidebar-title-reverse">
+                My Files
+            </h2>
+            <div class="items">
+                <!-- cart items will be generated automatically -->
+            </div>
+            <div class="cart-message">
+                <p>Send files to email</p>
+                <div class="email-button">
+                    <img src="../public/images/mail.svg" />
+                </div>
+            </div>
+            <div class="handle"><img src="../public/images/shopping_cart.svg" /></div>
+            
+        </div>
+
+        <!-- overlay -->    
+        <div class="overlay"></div>
+        
+        <!-- modal box -->
+        <div class="modal">
+            <div class="modal-header">
+                <h2><span class="main-title">Some inner content</span> <span class="close-modal"><img src="../public/images/white_x.svg" /></span></h2>
+            </div>
+            
+            <div class="_wrapper">
+                <!--- turnjs flipbook -->
+                <div class="flipbook"></div>
+                <div class="controls">
+                    <div>
+                        <div>
+                            <div>
+                                <button class="prev-page">&lt;</button>
+                                <div class="pages"><span class="page">0-1</span> / <span class="total-pages">#</span></div>
+                                <button class="next-page">&gt;</button>
+                            </div>
+                            <button class="fullscreen"><img src='./../public/images/fullscreen_icon.png' /><span>Fullscreen</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows-wrapper">
+                    <img class="prev-arrow" src="./../public/images/left_Arrow.svg" />
+                    <img class="next-arrow" src="./../public/images/right_arrow.svg" />
+                </div>
+                <div class="modal-content"></div>
+            </div>
+        </div>
+
+
+        <!-- keyboard -->
+        <div class="keyboard-wrapper">
+            <div class="cart-form-wrapper">
+                <h2>Send files from this cart to your email</h2>
+                <form>
+                    <div>
+                        <label for="name">Name*</label>
+                        <input class='keyboard-text' type="text" name="name" required="required" value=""/>
+                    </div>
+                    <div>
+                        <label for="email">Email*</label>
+                        <input class='keyboard-text' type="text" name="email" required="required" value=""/>
+                    </div>
+                    <p>Your information is Safe with us!</p>
+                    <button class="cart-form-submit" type="submit">Send</button>
+                </form>
+                
+                <div class="close-keyboard"><img src='../public/images/white_x.svg' /></div>
+                
+            </div>
+            <div class="simple-keyboard"></div>
+           
+        </div>
+
+        <div class="success-message-wrapper">
+            <div class="success-message">
+                <img src="../public/images/check.svg" />
+                <h2>SUCCESS</h2>
+                <p>The email was sent successfully</p>
+                <button class="success-button-submit">Ok</button>
+                <div class="close-success"><img src='../public/images/white_x.svg' /></div>
+            </div>
+        </div>
+        <!-- inner app features -->
+        <button class="reset">RESET</button>
+        <div class="inner-container">    
+          <div>
+            <div class="zone">
+               
+            <!-- main map image -->
+               <!-- <img src="../public/images/Energy Transition Background V9.jpg" />-->
+        
+                <video autoplay loop muted>
+                    <!--<source src="./../public/assets/Energy Transition Background V11_6600x2434.mp4" type="video/mp4">-->
+                    <source src="" type="" />
+                </video>
+
+                <!-- hotspots -->
+
+                <!-- hydro power plant -->
+                <div class="hotspot hpp-hotspot-resource hotspot-resource" data-name="Hydro Power Plant" data-type="resources" data-index="0"><img src='../public/images/orange_plus_stroke.png' /></div>
+                <div class="hotspot hpp-hotspot-case hotspot-case" data-name="Case Study VentureGlobal LNG" data-index-config="0" data-type="cases"><img src='../public/images/green_plus_stroke.png' /></div>
+
+                
+            </div>
+            <div class="map-hotspot">
+                <div class="resources-map-hotspot"></div>
+                <div class="cases-map-hotspot"></div>
+            </div>
+            <img class="map-legend" src="../public/images/legend.png" />
+        </div> 
+        </div>
+
+    <div class="footer">
+        <img src="../public/images/logo.jpg" />
+    </div>
+
+    </div>
+    <script src='../public/js/panzoom.min.js'></script>
+    <script type="text/javascript" src="../public/js/jquery-1.7.1.min.js"></script>
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/turn.js"></script>
+    <script src="../public/js/functions.js"></script>
+
+</body>
+</html>
