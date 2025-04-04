@@ -101,6 +101,8 @@ let evHandler = "";
 let bgAsset = "";
 let videobg = "";
 
+let cartIndexes = [];
+
 function isTouchDevice() {
     return (('ontouchstart' in window) ||
        (navigator.maxTouchPoints > 0) ||
@@ -179,6 +181,7 @@ function timerIncrement() {
 function clearCart(){
     items.innerHTML = "";
     cart = [];
+    cartIndexes = [];
 }
 
 function resetApp(){ 
@@ -244,7 +247,7 @@ async function fetchConfig(){
     if(window.versions){
      let response = await window.versions.config();
      config = JSON.parse(response);
-     console.log("------------>", config);
+     //console.log("------------>", config);
      if(config["mode"] == 'test'){
         url = config["testUrl"];
      }else{
@@ -396,13 +399,13 @@ function loadTurnjs(id, displayMode){
     }
 
     prevArrow.addEventListener(evHandler, (e) => {
-        console.log("EVENT: ", e)
+        //console.log("EVENT: ", e)
         e.preventDefault();
         oTurn.turn("previous");
     });
 
     nextArrow.addEventListener(evHandler, (e) => {
-        console.log("EVENT: ", e)
+        //console.log("EVENT: ", e)
         e.preventDefault();
         oTurn.turn("next");
     });
@@ -417,7 +420,7 @@ function addPrevEvent(){
             page.innerHTML = 0 + "-" + 1;
         }else{
            s = s - 2;
-           console.log("_____>: ", s)
+           //console.log("_____>: ", s)
            page.innerHTML = s + "-" + (s+ 1);
          
         }
@@ -430,7 +433,7 @@ function addPrevEvent(){
             page.innerHTML = 0 + "-" + 1;
         }else{
            s = s - 2;
-           console.log("_____>: ", s)
+           //console.log("_____>: ", s)
            page.innerHTML = s + "-" + (s+ 1);
          
         }
@@ -442,7 +445,7 @@ function addNextEvent(){
     let next = document.querySelector(".next-page");
     next.addEventListener(evHandler, () => {
         let total = totalPages.innerHTML;
-        console.log(currentPage, s)
+        //console.log(currentPage, s)
         if(currentPage == 1) {
             s = 2;
             page.innerHTML = s + "-" + (s+1);
@@ -451,7 +454,7 @@ function addNextEvent(){
            s = s + 2;
            //console.log(s+1, "TOTAL: ", total)
            if((s+1) == parseInt(total) || (s) == parseInt(total)){
-             console.log("TOTAL: ", s);
+             //console.log("TOTAL: ", s);
              page.innerHTML = total;
            }else{
              page.innerHTML = s + "-" + (s+ 1);
@@ -463,7 +466,7 @@ function addNextEvent(){
 
     nextArrow.addEventListener(evHandler, () => {
         let total = totalPages.innerHTML;
-        console.log(currentPage, s)
+        //console.log(currentPage, s)
         if(currentPage == 1) {
             s = 2;
             page.innerHTML = s + "-" + (s+1);
@@ -494,7 +497,7 @@ function initKeyboard(){
     });
     
     function onKeyPress(button) {
-        console.log(button)
+        //console.log(button)
 
         //set the curernt input value
         if(button == '{bksp}'){
@@ -535,36 +538,77 @@ function addEventToHotspots(){
 
 //--- adds the events to the corresponding hotspots
 function addEvents(elementType, element){
+   
     //--- TODO -- check if the event is a double click, then skip it
     let name = element.getAttribute('data-name');
     let index = element.getAttribute('data-index');
     let configIndex = element.getAttribute('data-index-config');
     let controls = _wrapper.querySelector(".controls");
   
-        element.addEventListener(evHandler, (e) => {
-            console.log("CLICKED HOTSPOT")
+        element.addEventListener(evHandler, async(e) => {
+            
+            //console.log("CLICKED HOTSPOT")
             e.stopPropagation();
             hideActiveSidebars();
-            toggleShowClass(overlay);   
-           if(elementType == 'resources'){
-            selectedAsset = elementType;
-            controls.style.display = 'flex';
-           }else{
-            selectedAsset = '';
-             controls.style.display = 'none';
+            //toggleShowClass(overlay);   
+            
+            if(elementType == 'resources'){
+                selectedAsset = elementType;
+                controls.style.display = 'flex';
+            }else{
+                selectedAsset = '';
+                controls.style.display = 'none';
             }
-            showModal(elementType, name, index, configIndex);
+
+            let _index = index;
+            //get the correct index
+            if(configIndex){
+               let cases = config['cases'];
+               await Promise.all(  
+                cases.map((c,i) => {
+                    let key = Object.keys(c);
+                    //get the reference index
+                    if(configIndex== c[key]['index']){
+                        _index = i;
+                        //console.log(configIndex, i)
+                    }
+                })
+             )
+            }
+
+            //config[elementType][_index][name]['files']
+            if(config[elementType][_index][name]['files'].length > 1){
+                showBubble(elementType, name, index, configIndex, element)
+            }else{
+                if(index == undefined){
+                
+                    showModal(elementType, name, configIndex, null, 0);
+                }
+                if(configIndex == undefined){
+                  
+                    showModal(elementType, name, index, null, 0);
+                }
+            }
+            
         });
-    
+   
 }
 
-//--- displays the modal on item click
-async function showModal(type, name, index, configIndex){
-  
-    toggleShowClass(modal); 
-    console.log(type, name, index)
-    
+//--- display the mini modal with the files
+async function showBubble(elementType, name, index, configIndex, element){
+
+    //console.log(name)
+
+    //check if there is a bubble already
+    let _bubble = document.querySelector(".bubble");
+    if(_bubble){
+        //remove if one is found
+       _bubble.remove();
+    }
+   
     let _index = index;
+   
+    //get the correct index
     if(configIndex){
        let cases = config['cases'];
        await Promise.all(  
@@ -573,38 +617,135 @@ async function showModal(type, name, index, configIndex){
             //get the reference index
             if(configIndex== c[key]['index']){
                 _index = i;
-                console.log(configIndex, i)
+                //console.log(configIndex, i)
             }
         })
      )
     }
+  
+    //create the modal element
+    let bubble = document.createElement('div');
+    bubble.classList.add('bubble');
 
+    //get the item coords
+    let rect = element.getBoundingClientRect();
+    let x = rect.left + window.scrollX;
+    let y = rect.top + window.scrollY;
+
+      
+    //create the elements according the files array on the item
+    let files = config[elementType][_index][name]['files'];
+    files.map((f, idx) => {
+        //console.log(f, name);
+        
+        let p = document.createElement('p');
+        p.classList.add('bubble-item');
+
+        //add attributes
+        p.setAttribute('data-type', elementType);
+        p.setAttribute('data-file', f);
+        p.setAttribute('data-name', name);
+        p.setAttribute('data-index', parseInt(_index));
+        p.setAttribute('data-inner-index', idx);
+
+        /*
+        //process the name of the file
+        let noSlashes = f.split("/").pop();
+        let noExtension = noSlashes.split(".pdf").shift();
+        let noUnderscores = noExtension.replaceAll("_", " "); 
+        */
+
+        //let text = document.createTextNode("+ " + noUnderscores);
+        let text = document.createTextNode("+ " + config[elementType][_index][name]['content'][idx]['title']);
+        p.appendChild(text);
+        bubble.appendChild(p);
+        
+    });
+
+    
+    //add coords to bubble
+    if(name == "Distributed Energy Resources"){
+        bubble.style.right = (x/100) + 40 + "px"; 
+    }else{
+        bubble.style.left = x + "px";
+    }
+   
+    bubble.style.top = y + "px";
+    //append the bubble
+    //zone.appendChild(bubble);
+    document.body.append(bubble);
+
+    let bubbleItems = document.querySelectorAll('.bubble-item');
+    let bItemsArr = Array.from(bubbleItems); 
+   
+    //add event to the items
+    bItemsArr.map((bi) => {
+        bi.addEventListener("click", (e) => {
+            e.stopPropagation();
+            let name = e.target.getAttribute('data-name');
+            let index = e.target.getAttribute('data-index');
+            let type = e.target.getAttribute('data-type');
+            let innerIdx = e.target.getAttribute('data-inner-index');
+
+            showModal(type, name, index, null, parseInt(innerIdx));
+        });
+    });
+
+}
+
+//--- displays the modal on item click
+async function showModal(type, name, index, configIndex, innerIdx){
+  
+    //console.log(type, name, index, configIndex, innerIdx)
+    
+    toggleShowClass(modal); 
+   
     let controls = _wrapper.querySelector(".controls");
+    
     if(type == 'resources'){
         selectedAsset = type;
         controls.style.display = 'flex';
-       }else{
+    }else{
         selectedAsset = '';
         controls.style.display = 'none';
-       }
-    
+    }
+
+    let images = '';
+    let filename = '';
+    let content = '';
+    let cartImage = '';   
+
     //extract the data
-    let images = config[type][_index][name]['images'];
-    let filename = config[type][_index][name]['file'];
-    let content = config[type][_index][name]['content'];
-    let cartImage = config[type][_index][name]['cart'];
+     
+    images = config[type][index][name]['images'][innerIdx];
+    filename = config[type][index][name]['files'][innerIdx];
+
+    if(config[type][index][name]['content']){
+        if(config[type][index][name]['content'].length == 1){
+            content = config[type][index][name]['content'][0];
+        }
+        if(config[type][index][name]['content'].length > 1){
+            content = config[type][index][name]['content'][innerIdx];
+        }
+    }
 
     let cartThumb = "";
 
-    if(cartImage){
-        cartThumb = cartImage;
-        
+    if(config[type][index][name]['cart']){
+        //check index
+        if(config[type][index][name]['cart'].length == 1){
+            cartThumb = config[type][index][name]['cart'][0];
+        }
+        if(config[type][index][name]['cart'].length > 1){
+            cartThumb = config[type][index][name]['cart'][innerIdx];
+        }
     }else{
         cartThumb = images[0];
-    }
+    }   
 
-    //content
-    generateFlipbookContent(images, type, filename);
+    //book pages content
+    generateFlipbookContent(images, type, filename, innerIdx);
+   
     currentImages = images;
     currentType = type;
     currentFilename = filename;
@@ -615,16 +756,26 @@ async function showModal(type, name, index, configIndex){
         currentContent = content;
         currentIndex = index;
         generateTextContent(type, filename, content, cartThumb, index);
-        mainTitle.innerHTML = config[type][index][name]['content']['main_title'];
+      
+        //mainTitle.innerHTML = config[type][index][name]['content'][innerIdx]['main_title'];
+
+        console.log("MAIN TITLE --->", config[type][index][name]['content'][innerIdx]['main_title']);
+        mainTitle.innerHTML = config[type][index][name]['content'][innerIdx]['main_title'];
+ 
     }else{
+       
        // mainTitle.innerHTML = 'Case Study';
-       console.log("CASES: ", config[type][_index][name]["title"])
-       mainTitle.innerHTML = config[type][_index][name]["title"];
+       //console.log("CASES: ", config[type][parseInt(index)][name]["titles"][parseInt(innerIdx)], index, innerIdx)
+       mainTitle.innerHTML = config[type][index][name]["titles"][innerIdx];
+       
     } 
+    
 }
 
 //--- uses the images passed to create "pages" for turnjs, and a new turnjs instance
-async function generateFlipbookContent(images, type, filename){
+async function generateFlipbookContent(images, type, filename, innerIdx){
+    //console.log(images, type, filename, innerIdx)
+    
     //turn js displayMode
     let displayMode = 'single';
     let _flipbook = _wrapper.querySelector(".flipbook");
@@ -653,7 +804,7 @@ async function generateFlipbookContent(images, type, filename){
         displayMode = 'double';
     }
 
-    
+       
     //process the images
     let contentImages = images;
     await Promise.all(
@@ -667,11 +818,13 @@ async function generateFlipbookContent(images, type, filename){
     );
     //create a new turnjs instance
     loadTurnjs(randomN, displayMode);
+  
 }
 
 //--- generates the content for the resources
-function generateTextContent(type, filename, content, thumbnail, idx){
-    console.log("GENERATE CONTENT ---> ", filename, thumbnail)
+function generateTextContent(type, filename, content, thumbnail, idx, innerIdx){
+    //console.log("CONTENT------->", content)
+    //console.log("GENERATE CONTENT ---> ", filename, thumbnail)
     //create content outer wrapper
     let div = document.createElement('div');
     div.classList.add('modal-content');
@@ -710,7 +863,7 @@ function generateTextContent(type, filename, content, thumbnail, idx){
     let image = document.createElement('img');
     //let imageSrc = `./../public/assets/${type}/qr/${content.qr}.png`;
     let imageSrc = `${filesPath}${content.qr}`;
-    console.log(content.qr)
+    //console.log(content.qr)
     image.setAttribute('src', imageSrc);
     innerDiv.appendChild(image);
     div.appendChild(innerDiv);
@@ -729,12 +882,15 @@ function generateTextContent(type, filename, content, thumbnail, idx){
 function addToCart(target, type, filename){
    
     //get the data attribute
+    let index = target.getAttribute('data-index');
     let file = target.getAttribute('data-file');
     let pdf = `${filename}`;
+   
     //check if the item exits on the cart
     if(!cart.includes(pdf)){
         //push to the cart array
         cart.push(pdf); 
+        setCartItemIndexes(index)
         //create images using the files on the content
         generateCartItemThumbnail(target, type, file);
         //alert(`Item ${pdf} was added successfully to the cart`);
@@ -747,9 +903,15 @@ function addToCart(target, type, filename){
         cartBar.classList.add("show")
 
     }else{
-        //alert("The item is already in the cart");
+        alert("The item is already in the cart");
     }
 }
+
+function setCartItemIndexes(indx){
+    cartIndexes.push(indx);
+    console.log(cartIndexes)
+}
+
 
 //--- generate the cart items thumbnail
 function generateCartItemThumbnail(element, type, filename){
@@ -764,7 +926,7 @@ function generateCartItemThumbnail(element, type, filename){
     let thumbnailSrc = element.getAttribute('data-thumbnail');
     let thumbnail = document.createElement('div');
     thumbnail.classList.add('cart-item');
-    console.log("CART FILE --->", filename)
+    //console.log("CART FILE --->", filename)
     //thumbnail.setAttribute("style", `background-image:url('./../public/assets/${type}/images/${filename}/${thumbnailSrc}')`);
     thumbnail.setAttribute("style", `background-image:url('${filesPath}${thumbnailSrc}')`);
 
@@ -779,7 +941,7 @@ function generateCartItemThumbnail(element, type, filename){
     thumbnailWrapper.appendChild(thumbnail);
     //append to the items inside the cart element
     items.appendChild(thumbnailWrapper);
-    console.log(cart)
+    //console.log(cart)
     //add event to the remove button
     removeButton.addEventListener('click', (e) => {
         //remove the cartItem wrapper from the DOM
@@ -789,9 +951,9 @@ function generateCartItemThumbnail(element, type, filename){
         
         //filter out the file from the cart items        
         let _file = e.target.getAttribute('data-file');
-        console.log(_file);
+        //console.log(_file);
         cart = cart.filter( item => item !== _file);         
-        console.log("FILTERED CART: ", cart);
+        //console.log("FILTERED CART: ", cart);
     });
 }
 
@@ -799,15 +961,6 @@ function generateCartItemThumbnail(element, type, filename){
 function addEventToBackArrow(){
     backArrow.addEventListener('click', (e) => {
         e.stopPropagation();
-       
-
-        /*
-        if(selectedAsset == 'resources'){
-            sidebar.classList.remove('transformed');
-            sidebar.classList.remove('widen');
-            //selectedAsset = '';
-        }
-            */
 
         sidebar.classList.remove('transformed');
         sidebar.classList.remove('widen');
@@ -866,21 +1019,37 @@ function addEventToCartSubmit(){
     cartSubmit.addEventListener('click', async(e) => {
         e.preventDefault();
          //get the form data
-         let formData = new FormData(form);
-         let userName = formData.get('name');
-         let userEmail = formData.get('email');
+        let formData = new FormData(form);
+        let userName = formData.get('name');
+        let userEmail = formData.get('email');
+        
+        let cartObjects = [];
+ 
+        cart.map((item, i) => {
+           //break the book name
+           let __item = item.split("/").pop();
+           
+           cartObjects.push({
+            'title': Object.keys(config['resources'][cartIndexes[i]])[0],
+            'document': __item
+           });
+        });
 
         //simple validation
         if(userName !== '' && userEmail !== ''){
             if(userEmail.includes('@')){
                //get the cart items for the user
-               console.log(cart);
+               //console.log(cart);
                
                let request = {
                 name: userName,
                 email: userEmail,
-                files: cart
+                files: cart,
+                data: JSON.stringify(cartObjects)
                }
+
+               console.log("REQUEST --------> ", request)
+
                //check if there are files to send
                if(request.files.length > 0){
                  //send the data
@@ -920,10 +1089,9 @@ function sendUserRequest(request){
         body: JSON.stringify(request)
     };
 
-    /*
     //check if theres an Eloqua POD available
     return fetch(EloquaUrl).then(response => response.json()).then((res) => {
-        console.log(res)
+        //console.log(res)
         if(res.response == '"Not authenticated."'){
             //not authenticated -- stop making calls
             return null;
@@ -933,10 +1101,6 @@ function sendUserRequest(request){
             .then(data => data);
         }
     });
-    */
-    return fetch(url, requestOptions).then(response => response.json())
-            .then(data => data);
-   
 }
 
 
@@ -948,26 +1112,6 @@ function toggleSidebars(){
            let parent = e.target.parentNode;
            toggleShowClass(parent);
            resetMenubar();
-           
-
-           /*
-           if(sidebar.classList.contains('widen') && !sidebar.classList.contains('show')){
-                sidebar.classList.add('transformed')
-           }
-           if(sidebar.classList.contains('widen') && sidebar.classList.contains('show')){
-            sidebar.classList.remove('transformed')
-           }
-            */
-           /*
-            if(selectedAsset == 'resources'){
-               if(sidebar.classList.contains('widen') && !sidebar.classList.contains('show')){
-                sidebar.classList.add('transformed')
-               }
-               if(sidebar.classList.contains('widen') && sidebar.classList.contains('show')){
-                sidebar.classList.remove('transformed')
-               }
-            }
-            */
             
         });
     });
@@ -976,16 +1120,6 @@ function toggleSidebars(){
 //--- hides the active sidebars when an item is selected on the map
 function hideActiveSidebars(){
     bars.map(bar => {
-       /*
-        //if(selectedAsset == 'resources'){
-            if(sidebar.classList.contains('widen') && !sidebar.classList.contains('show')){
-                sidebar.classList.add('transformed')
-            }
-            if(sidebar.classList.contains('widen') && sidebar.classList.contains('show')){
-                sidebar.classList.remove('transformed')
-            }
-        //}
-*/
         resetMenubar();
         bar.classList.remove('show');
     });
@@ -998,7 +1132,7 @@ function addEventsToTypes(){
             e.stopPropagation();
            let currentType = type.getAttribute('data-type');    
            selectedAsset = currentType;    
-           console.log("SELECTED TYPE: ", selectedAsset)
+           //console.log("SELECTED TYPE: ", selectedAsset)
            sidebar.classList.add('widen'); 
             if(selectedAsset == 'resources'){
                 //sidebar.classList.add('widen'); 
@@ -1016,61 +1150,84 @@ function addEventsToTypes(){
 
 //--- generates the content for the sidebar
 function generateContentForType(currentType){
-    
+   
     typesAssets.innerHTML = '';
     //get the type data inside the config
     let dataItems = config[currentType];
 
+    //console.log("------------>: ", dataItems)
+
     dataItems.map((item, idx) => {
+     
         let typeText = '';
         //get the keys
         let key = Object.keys(item)[0];
         //get the properties
-        let {file, book_type} = item[key];
-       
-        //generate the elements
-        let pItem = document.createElement('p');
-        //generate the text based on the type of asset
-      
+        let {files, book_type} = item[key];
+
+        
         if(currentType == 'resources'){
-            let n = item[key]["content"]["title"];
-            typeText = `${n} `;
+           
+            if(key == 'Coal Power Plant' || key == 'Waste-To-Energy' || key == 'Battery Energy Storage' || key == 'Distribuited Energy Resources' || key == 'Geothermal Power Plant' ){
+                console.log(`skipping ${key}`);
+            }else{
+                let contents = item[key]["content"];
+                contents.map((c, i) => {
+                    let n = c["title"];
+                    typeText = `${n} `;
+                    let file = files[i];
+                    generateNavLinks(key, file, book_type, typeText, currentType, idx, i);
+                });
+            }
         }else{
             //let caseIndex = (idx + 1) < 10 ? '0' + (idx + 1) : (idx + 1);
-            let _n = item[key]["title"];
-            console.log(_n)
-            //typeText= `Case Study ${caseIndex}`;
-            typeText = _n;
-        }
-        let pItemText = document.createTextNode(typeText);
-        pItem.setAttribute('data-name', key);
-        pItem.setAttribute('data-type', currentType);
-        pItem.setAttribute('data-index', idx)
-        pItem.appendChild(pItemText);
-        
-        if(currentType == 'resources'){
-            let bookTypeText = document.createElement('span');
-            let bookTypeTextNode = document.createTextNode("[" + book_type + "]");
-            bookTypeText.appendChild(bookTypeTextNode);
-            pItem.appendChild(bookTypeText)
+            let contents = item[key]['titles'];
+            
+            contents.map((c, i) => {
+                let _n = c;
+                typeText = _n;
+                generateNavLinks(key, null, book_type, typeText, currentType, idx, 0);
+            })
+            
         }
 
-        typesAssets.appendChild(pItem);
-        //add event to the item
-        pItem.addEventListener('click', (e) => {
-            e.stopPropagation();
-            let name = e.target.getAttribute('data-name');
-            let type = e.target.getAttribute('data-type');
-            let index = e.target.getAttribute('data-index');
-            //toggleSidebarWidth();
-            hideActiveSidebars();
-            toggleShowClass(overlay);   
-            showModal(type, name, index);
-        });
-        
     });
     
 }
+
+function generateNavLinks(key, file, book_type, typeText, currentType, idx, innerIdx){
+    let pItem = document.createElement('p');
+    let pItemText = document.createTextNode(typeText);
+    pItem.setAttribute('data-name', key);
+    pItem.setAttribute('data-type', currentType);
+    pItem.setAttribute('data-index', idx);
+    pItem.setAttribute('data-inner-index', innerIdx)
+    pItem.appendChild(pItemText);
+    
+    if(currentType == 'resources'){
+        let bookTypeText = document.createElement('span');
+        let bookTypeTextNode = document.createTextNode("[" + book_type + "]");
+        bookTypeText.appendChild(bookTypeTextNode);
+        pItem.appendChild(bookTypeText)
+    }
+
+    typesAssets.appendChild(pItem);
+
+
+    pItem.addEventListener('click', (e) => {
+        e.stopPropagation();
+        let name = e.target.getAttribute('data-name');
+        let type = e.target.getAttribute('data-type');
+        let index = e.target.getAttribute('data-index');
+        let innerIdx = e.target.getAttribute('data-inner-index');
+        //toggleSidebarWidth();
+        hideActiveSidebars();
+        toggleShowClass(overlay);   
+        //    showModal(elementType, name, configIndex, null, 0);
+        showModal(type, name, index, null, innerIdx);
+    });
+}
+
 
 //--- adds the event to close the success modal after submit
 function addEventToCloseSuccessModal() {
@@ -1106,12 +1263,6 @@ function closeModal(){
     let _wrapperChild = document.querySelector("._wrapper .flipbook");
     _wrapperChild.style.pointerEvents = 'none';
 
-/*
-    page.innerHTML = 0 + "-" + 1;
-    s = 0;
-    currentPage = 1;
-    console.log("---------->", s);
-*/
 
     console.log(page.innerHTML, s, currentPage)
     console.log("RESET PAGES VALUES: ");
@@ -1201,6 +1352,12 @@ function toggleShowClass(__element){
 function clearOnDocumentClick(){
     document.addEventListener('click', () => {
         hideActiveSidebars();
+        //check if there is a bubble already
+        let _bubble = document.querySelector(".bubble");
+        if(_bubble){
+            //remove if one is found
+        _bubble.remove();
+        }
         //closeModal();
     });
 }

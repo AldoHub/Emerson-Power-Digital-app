@@ -130,6 +130,20 @@ h2, h3 {
     margin-bottom: -3px;
 }
 
+.bubble {
+    border: 1px solid #004B8D;
+    position: absolute;
+    width: fit-content;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.bubble-item {
+    color: #004B8D;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
 video {
     width: 100%;
     height: auto;
@@ -707,162 +721,134 @@ video {
 }
 
 .hpp-hotspot-resource { 
-    top: 22.5%;
-    left: 8.2%;
+    top: 21%;
+    left: 19%;
 }
 
 .hpp-hotspot-case {
-    top: 18.5%;
+    top: 21%;
+    left: 27.5%;
+}
+
+.cpp-hotspot-case {
+    top: 36.5%;
+    left: 22.5%;
+}
+
+.npp-hotspot-resource { 
+    top: 58.5%;
+    left: 1.2%;
+}
+
+.npp-hotspot-case {
+    top: 58.5%;
     left: 14%;
-}
-
-/*
-.wf-hotspot-resource { 
-    top: 22.5%;
-    left: 8.2%;
-}
-
-.wf-hotspot-case {
-    top: 18.5%;
-    left: 14%;
-}
-
-.acr-hotspot-resource { 
-    top: 31%;
-    left: 2.8%;
-}
-
-.evb-hotspot-resource { 
-    top: 37%;
-    left: 6%;
-}
-
-.evbr-hotspot-resource { 
-    top: 44.5%;
-    left: 10%;
-}
-
-.evbr-hotspot-case { 
-    top: 39.2%;
-    left: 17.7%;
-}
-
-.chp-hotspot-resource { 
-    top: 32.7%;
-    left: 16%;
-}
-
-.chp-hotspot-case { 
-    top: 28%;
-    left: 23.5%;
-}
-
-.elp-hotspot-resource { 
-    top: 25%;
-    left: 24.4%;
-}
-
-.rfs-hotspot-resource { 
-    top: 38.4%;
-    left: 28%;
-}
-
-.rfs-hotspot-case { 
-    top: 33%;
-    left: 35.4%;
-}
-
-.pp-hotspot-resource { 
-    top: 58.4%;
-    left: 36%;
-}
-
-.pp-hotspot-case { 
-    top: 49.5%;
-    left: 44.5%;
-}
-
-.uc-hotspot-resource { 
-    top: 83.5%;
-    left: 53.2%;
-}
-
-.ofs-hotspot-resource { 
-    top: 15.5%;
-    left: 30.2%;
-}
-
-.ofs-hotspot-case { 
-    top: 12%;
-    left: 35.2%;
 }
 
 .gpp-hotspot-resource { 
-    top: 34%;
-    left: 37.2%;
+    top: 22.5%;
+    left: 31.3%;
 }
 
-.lng-hotspot-resource { 
-    top: 49.2%;
-    left: 55%;
+.gpp-hotspot-case {
+    top: 22%;
+    left: 40%;
 }
 
-.lng-hotspot-case { 
-    top: 57.5%;
-    left: 64%;
+.wte-hotspot-case {
+    top: 42.5%;
+    left: 35%;
 }
 
-.rf-hotspot-resource { 
-    top: 16%;
-    left: 41.2%;
+.gaspp-hotspot-resource { 
+    top: 82.5%;
+    left: 11.5%;
 }
 
-.rf-hotspot-case { 
+.gaspp-hotspot-case {
+    top: 82%;
+    left: 27.2%;
+}
+
+.wp-hotspot-resource { 
+    top: 38.5%;
+    left: 39.5%;
+}
+
+.wp-hotspot-case {
+    top: 38.2%;
+    left: 49.5%;
+}
+
+.sp-hotspot-resource { 
+    top: 68.5%;
+    left: 37.3%;
+}
+
+.sp-hotspot-case {
+    top: 68%;
+    left: 51%;
+}
+
+.occ-hotspot-resource { 
+    top: 18.7%;
+    left: 52%;
+}
+
+.occ-hotspot-case {
     top: 18.5%;
-    left: 45.2%;
+    left: 60%;
 }
 
-.gdf-hotspot-resource { 
-    top: 23.7%;
-    left: 43.2%;
+.trans-hotspot-resource { 
+    top: 43.5%;
+    left: 53.7%;
 }
 
-.gdf-hotspot-case { 
-    top: 27.5%;
-    left: 48.5%;
+.trans-hotspot-case {
+    top: 43.2%;
+    left: 64.2%;
 }
 
-.rng-hotspot-resource { 
-    top: 32%;
-    left: 58%;
+.dist-hotspot-resource { 
+    top: 43.2%;
+    left: 65.7%;
 }
 
-.bh-hotspot-resource { 
-    top: 48%;
-    left: 71%;
+.dist-hotspot-case {
+    top: 43%;
+    left: 76.3%;
 }
 
-.bh-hotspot-case { 
-    top: 54%;
-    left: 79%;
+.bes-hotspot-case {
+    top: 49.5%;
+    left: 78.2%;
 }
 
-.ccp-hotspot-resource { 
-    top: 57%;
-    left: 84%;
+.mg-hotspot-resource { 
+    top: 84.5%;
+    left: 72%;
 }
 
-.smr-hotspot-resource { 
-    top: 36.8%;
-    left: 73.5%;
+.mg-hotspot-case {
+    top: 84.5%;
+    left: 87.8%;
 }
 
-.ccs-hotspot-resource { 
-    top: 45%;
-    left: 88%;
+.ghh-hotspot-resource { 
+    top: 22.2%;
+    left: 69.8%;
 }
 
-*/
+.ghh-hotspot-case {
+    top: 22%;
+    left: 77%;
+}
+
+.der-hotspot-case {
+    top: 42.5%;
+    left: 96.7%;
+}
 
 .footer {
     display: flex;
