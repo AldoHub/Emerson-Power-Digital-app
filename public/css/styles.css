@@ -487,6 +487,7 @@ video {
     justify-content: center;
     align-items: center;
     padding: 2px 5px;
+    min-width: 50px;
 }
 
 .fullscreen img {

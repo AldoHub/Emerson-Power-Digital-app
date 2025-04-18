@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     addNextEvent();
     addPrevEvent();
     inactiveTime();
+    //hidePrev();
 });
 
   
@@ -102,6 +103,7 @@ let bgAsset = "";
 let videobg = "";
 
 let cartIndexes = [];
+
 
 function isTouchDevice() {
     return (('ontouchstart' in window) ||
@@ -203,7 +205,7 @@ function resetApp(){
 
 
 function setFullscreen(){
-    fullscreen.addEventListener("click", () => {
+    fullscreen.addEventListener(evHandler, () => {
             if(isFullScreen){
                 fSpan.innerHTML = "Fullscreen";
                 //close full screen
@@ -389,7 +391,8 @@ function loadTurnjs(id, displayMode){
     
     $(".next-page").click(function(e){
         e.preventDefault();
-        oTurn.turn("next");
+            oTurn.turn("next");
+        
     });
 
     prevArrow.style.opacity = 0;
@@ -416,8 +419,14 @@ function addPrevEvent(){
     
     let prev = document.querySelector(".prev-page");
     prev.addEventListener(evHandler, () => {
+       
+        if(page.innerHTML == '0-1'){
+            return
+        }
+
         if(currentPage == 1) {
             page.innerHTML = 0 + "-" + 1;
+            //prev.style.pointerEvents = 'none';
         }else{
            s = s - 2;
            //console.log("_____>: ", s)
@@ -443,23 +452,35 @@ function addPrevEvent(){
 
 function addNextEvent(){
     let next = document.querySelector(".next-page");
+    let prev = document.querySelector(".prev-page");
     next.addEventListener(evHandler, () => {
         let total = totalPages.innerHTML;
+        console.log("----------->",total)
         //console.log(currentPage, s)
         if(currentPage == 1) {
             s = 2;
             page.innerHTML = s + "-" + (s+1);
+            //prev.style.display = 'block';
         }else{
-          
-           s = s + 2;
-           //console.log(s+1, "TOTAL: ", total)
-           if((s+1) == parseInt(total) || (s) == parseInt(total)){
-             //console.log("TOTAL: ", s);
-             page.innerHTML = total;
+            //prev.style.pointerEvents = 'all';
+
+           if(page.innerHTML.includes(total)){
+                console.log("DONE")
            }else{
-             page.innerHTML = s + "-" + (s+ 1);
+            s = s + 2;
+           
+            if((s+1) == parseInt(total) || (s) == parseInt(total)){
+                //console.log("TOTAL: ", s);
+                if (total % 2 == 0){
+                   page.innerHTML = total;
+                }else{
+                   page.innerHTML = s + "-" + (s+ 1);
+                }
+            }else{
+                page.innerHTML = s + "-" + (s+ 1);
+              }
            }
-          
+
         }
         currentPage++;
     });
@@ -485,6 +506,12 @@ function addNextEvent(){
         currentPage++;
     })
   
+}
+
+
+function hidePrev(){
+    let prev = document.querySelector(".prev-page");
+    prev.style.display = 'none';
 }
 
 
@@ -680,7 +707,7 @@ async function showBubble(elementType, name, index, configIndex, element){
    
     //add event to the items
     bItemsArr.map((bi) => {
-        bi.addEventListener("click", (e) => {
+        bi.addEventListener(evHandler, (e) => {
             e.stopPropagation();
             let name = e.target.getAttribute('data-name');
             let index = e.target.getAttribute('data-index');
@@ -688,6 +715,11 @@ async function showBubble(elementType, name, index, configIndex, element){
             let innerIdx = e.target.getAttribute('data-inner-index');
 
             showModal(type, name, index, null, parseInt(innerIdx));
+            let _bubble = document.querySelector(".bubble");
+            if(_bubble){
+                //remove if one is found
+               _bubble.remove();
+            }
         });
     });
 
@@ -1042,6 +1074,7 @@ function addEventToCartSubmit(){
                //console.log(cart);
                
                let request = {
+                app: "Emerson Power Digital",
                 name: userName,
                 email: userEmail,
                 files: cart,
@@ -1107,7 +1140,7 @@ function sendUserRequest(request){
 //--- shows/hides the sidebars
 function toggleSidebars(){
     handles.map(handle => {
-        handle.addEventListener("click", (e) => {
+        handle.addEventListener(evHandler, (e) => {
             e.stopPropagation();
            let parent = e.target.parentNode;
            toggleShowClass(parent);
@@ -1128,7 +1161,7 @@ function hideActiveSidebars(){
 //--- adds events to the left sidebar elements
 function addEventsToTypes(){
     types.map(type => {
-        type.addEventListener("click", (e) => {
+        type.addEventListener(evHandler, (e) => {
             e.stopPropagation();
            let currentType = type.getAttribute('data-type');    
            selectedAsset = currentType;    
@@ -1242,7 +1275,7 @@ function addEventToCloseSuccessModal() {
 
 //--- adds the event to the close button on the modal
 function addCloseEventToModalButton(){
-    close.addEventListener("click",(e) => {
+    close.addEventListener(evHandler,(e) => {
         e.stopPropagation();
         closeModal();
        
