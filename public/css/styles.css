@@ -28,6 +28,7 @@ html, body, .main-container {
     overflow: hidden;
     font-family: sans-serif;
     font-family: 'Noto Sans';
+    touch-action: none;
 }
 
 h2 {
@@ -128,6 +129,21 @@ h2, h3 {
     border-radius: 20px;
     z-index: 5;
     margin-bottom: -3px;
+}
+
+.test-elem, .test-elem2 {
+    border: 1px solid red;
+    position: relative;
+    width: 25%;
+    position: absolute;
+    z-index: 99;
+    aspect-ratio: 22 / 32.5;
+    touch-action: auto;
+}
+
+.test-elem2 {
+    border: 1px solid blue;
+    right: 1.2em;
 }
 
 .bubble {
@@ -352,6 +368,7 @@ video {
 .flipbook {
     pointer-events: none;
 }
+
 
 .flipbook.instructions {
     background: url('../assets/PDF-instructions.jpg');
@@ -1164,7 +1181,7 @@ video {
 
     .items {
         padding: 1em 3.5em 10em 1em;
-        max-height: 1550px;
+        /*max-height: 1550px;*/
     }
 
     
@@ -1180,7 +1197,7 @@ video {
     }
     
     .cpp-hotspot-case {
-        top: 367%;
+        top: 36.7%;
         left: 22.5%;
     }
     
@@ -1453,8 +1470,8 @@ video {
 
 @media screen and (max-height: 1440px){
     .items {
-        padding-bottom: 10rem;
-        /*max-height: 1000px; */
+        padding-bottom: 20rem;
+       
     }
 
 }

@@ -1,0 +1,803 @@
+{
+    "resources": [
+        {
+            "Hydro Power Plant" : {
+                "book_type": "Brochure",
+                "images" : [          
+                    [ 
+                    "/hydro_power_plant/hydro1.jpg",
+                    "/hydro_power_plant/hydro2.jpg",
+    
+                    "/hydro_power_plant/hydro3.jpg",
+    
+                    "/hydro_power_plant/hydro4.jpg",
+    
+                    "/hydro_power_plant/hydro5.jpg"
+                                        ]
+                ],
+                "files": [
+                    "/hydro_power_plant/Emerson Hydro Solutions Brochure.pdf"
+    
+                ],
+                "content" : [
+                    {
+                    "main_title": "Hydropower Plant", 
+                    "title": "Optimize Hydropower Performance with Modernized Control",
+                    "content": "<p>Extend the life of your hydroelectric plant with modernized control solutions that boost reliability, availability, and power dispatch efficiency. Optimize turbine control, pond management, energy use, and equipment protection. Also reduce shutdowns, accelerate startups, and enhance overall performance. </p><p> Download the brochure for details! </p>",
+                    "qr": "/hydro_power_plant/Brochure_Emerson_Hydropower_Solutions.png"
+                }
+                ]
+            }
+           },
+           {
+            "Coal Power Plant" : {
+                "book_type": "eBook",
+                "images" : [
+                    ["/evb/Lithium-Batteries-eBook-1.jpg",
+                    "/evb/Lithium-Batteries-eBook-2.jpg",
+                    "/evb/Lithium-Batteries-eBook-3.jpg",
+                    "/evb/Lithium-Batteries-eBook-4.jpg",
+                    "/evb/Lithium-Batteries-eBook-5.jpg",
+                    "/evb/Lithium-Batteries-eBook-6.jpg",
+                    "/evb/Lithium-Batteries-eBook-7.jpg",
+                    "/evb/Lithium-Batteries-eBook-8.jpg",
+                    "/evb/Lithium-Batteries-eBook-9.jpg",
+                    "/evb/Lithium-Batteries-eBook-10.jpg",
+                    "/evb/Lithium-Batteries-eBook-11.jpg",
+                    "/evb/Lithium-Batteries-eBook-12.jpg",
+                    "/evb/Lithium-Batteries-eBook-13.jpg"]
+                    
+                ],
+                "files": [
+                    "/evb/Lithium-Batteries-eBook.pdf"
+                ],
+                "content" :[ 
+                    {
+                    "main_title": "Electric Vehicle Battery Manufacturing", 
+                    "title": "Ensure Safety and Optimized Production of Lithium Batteries",
+                    "content": "<p>With the lithium-ion battery industry evolving rapidly, manufacturers must overcome challenges associated with mining, refining, battery component manufacturing, and battery cell production. That's why they need access to advanced control, increased process visibility, and actionable information for improved decision-making. </p><p> Download the eBook for insights.</p>",
+                    "qr": "/evb/Emerson_EVB Manufacturing_Lithium eBook_2022_EN_Final.png"
+                    }
+                ]
+            }
+           },
+           {
+            "Nuclear Power Plant" : {
+                "book_type": "Flyer",
+                "images" : [
+                 [   
+                    "/nuclear_plant/nuclear1.jpg",   
+                    "/nuclear_plant/nuclear2.jpg",            
+                    "/nuclear_plant/nuclear3.jpg",            
+                    "/nuclear_plant/nuclear4.jpg",            
+                    "/nuclear_plant/nuclear5.jpg",            
+                    "/nuclear_plant/nuclear6.jpg",            
+                    "/nuclear_plant/nuclear7.jpg",            
+                    "/nuclear_plant/nuclear8.jpg",            
+                    "/nuclear_plant/nuclear9.jpg",            
+                    "/nuclear_plant/nuclear10.jpg",            
+                    "/nuclear_plant/nuclear11.jpg",            
+                    "/nuclear_plant/nuclear12.jpg"       
+               ],
+                [   
+                "/nuclear_plant/2/nuclear_book2_1.jpg",   
+                "/nuclear_plant/2/nuclear_book2_2.jpg",   
+"/nuclear_plant/2/nuclear_book2_3.jpg",   
+"/nuclear_plant/2/nuclear_book2_4.jpg",   
+"/nuclear_plant/2/nuclear_book2_5.jpg",   
+"/nuclear_plant/2/nuclear_book2_6.jpg",   
+"/nuclear_plant/2/nuclear_book2_7.jpg",   
+"/nuclear_plant/2/nuclear_book2_8.jpg",   
+"/nuclear_plant/2/nuclear_book2_9.jpg",   
+"/nuclear_plant/2/nuclear_book2_10.jpg",   
+"/nuclear_plant/2/nuclear_book2_11.jpg",   
+"/nuclear_plant/2/nuclear_book2_12.jpg",   
+"/nuclear_plant/2/nuclear_book2_13.jpg",   
+"/nuclear_plant/2/nuclear_book2_14.jpg",   
+"/nuclear_plant/2/nuclear_book2_15.jpg",   
+"/nuclear_plant/2/nuclear_book2_16.jpg",   
+"/nuclear_plant/2/nuclear_book2_17.jpg",   
+"/nuclear_plant/2/nuclear_book2_18.jpg",   
+"/nuclear_plant/2/nuclear_book2_19.jpg",   
+"/nuclear_plant/2/nuclear_book2_20.jpg",   
+"/nuclear_plant/2/nuclear_book2_22.jpg",   
+"/nuclear_plant/2/nuclear_book2_23.jpg",   
+"/nuclear_plant/2/nuclear_book2_24.jpg",   
+"/nuclear_plant/2/nuclear_book2_25.jpg",   
+"/nuclear_plant/2/nuclear_book2_26.jpg",   
+"/nuclear_plant/2/nuclear_book2_27.jpg",   
+"/nuclear_plant/2/nuclear_book2_28.jpg", 
+"/nuclear_plant/2/nuclear_book2_29.jpg",   
+"/nuclear_plant/2/nuclear_book2_30.jpg",   
+"/nuclear_plant/2/nuclear_book2_31.jpg",   
+"/nuclear_plant/2/nuclear_book2_32.jpg",   
+"/nuclear_plant/2/nuclear_book2_33.jpg",   
+"/nuclear_plant/2/nuclear_book2_34.jpg",   
+"/nuclear_plant/2/nuclear_book2_35.jpg",   
+"/nuclear_plant/2/nuclear_book2_36.jpg",   
+"/nuclear_plant/2/nuclear_book2_37.jpg",   
+"/nuclear_plant/2/nuclear_book2_38.jpg",   
+"/nuclear_plant/2/nuclear_book2_39.jpg",   
+"/nuclear_plant/2/nuclear_book2_40.jpg",   
+"/nuclear_plant/2/nuclear_book2_41.jpg",   
+"/nuclear_plant/2/nuclear_book2_42.jpg",   
+"/nuclear_plant/2/nuclear_book2_43.jpg",   
+"/nuclear_plant/2/nuclear_book2_44.jpg",   
+"/nuclear_plant/2/nuclear_book2_45.jpg",   
+"/nuclear_plant/2/nuclear_book2_46.jpg",   
+"/nuclear_plant/2/nuclear_book2_47.jpg",   
+"/nuclear_plant/2/nuclear_book2_48.jpg",   
+"/nuclear_plant/2/nuclear_book2_49.jpg",   
+"/nuclear_plant/2/nuclear_book2_50.jpg",   
+"/nuclear_plant/2/nuclear_book2_51.jpg",   
+"/nuclear_plant/2/nuclear_book2_52.jpg"   
+
+            ]
+                 
+                ],
+                "files": [
+                    "/nuclear_plant/flyer-rosemount-3150-series-nuclear-pressure-transmitter-en-4982258.pdf",
+                     "/nuclear_plant/2/Nuclear_Brochure_New_Cover_EXCHANGE_2025.pdf"
+                ],
+                "content" : [
+                    {
+                        "main_title": "Nuclear Plant", 
+                        "title": "Achieve Superior Safety and Reliability with Proven Pressure Transmitters",
+                        "content": "<p>Discover how Emerson provides unmatched nuclear-qualified pressure measurement solutions with industry-leading Rosemount instruments that ensure superior safety, reliable operation, and top-tier performance. Backed by field-proven expertise, these robust solutions meet all commercial plant needs. </p><p> Download the flyer to learn how we solve your toughest challenges!  </p>",
+                        "qr":   "/nuclear_plant/Rosemount_3150_Series_Nuclear_Pressure_Transmitters.png"
+                    },
+                    {
+                        "main_title": "Nuclear Plant", 
+                        "title": "Enhance Flexibility, Safety, and Reliability with Emerson's Complete Valve Solutions",
+                        "content": "<p>Discover how Emerson's comprehensive portfolio of nuclear-grade valves ensures safety, compliance, and meets strict standards through advanced testing. </p><p>Access this flyer to learn how to streamline projects, manage complexity, and extend plant life cycles with expert support and global resources!</p>",
+                        "qr":   "/nuclear_plant/2/Brochure_Main_Valve_Nuclear_Partner.png"
+                    }            
+            ],
+            "cart" : ["/nuclear_plant/nuclear_cover.jpg", "/nuclear_plant/2/nuclear_book2_cart.jpg"]
+            }
+           },   
+         
+    {
+        "Geothermal Power Plant" : {
+            "book_type": "White Paper",
+            "images" : [
+               [ 
+                "/utility_company/Emerson_Utility Company_socalgas-delivers-clean-energy-for-[h2]-innovation-experience-en-8618038_page-0001.jpg"              ]
+            ],
+            "files": [
+                "/utility_company/Hydrogen-Home-White-Paper (2).pdf"
+            ],
+            "content" : [{
+                "main_title": "Utility Company", 
+                "title": "Emerson Technologies Help SoCalGas Deliver Clean Energy [H2]",
+                "content": "<p>Learn how Southern California Gas, a regulated subsidiary of Sempra Energy, worked with Emerson to deploy digital technologies, software, and services to demonstrate the resiliency and reliability of a hydrogen microgrid for Southern California utility consumers.</p><p> Download this white paper to discover how they optimally balanced energy consumption with sophisticated control and precise measurement.</p>",
+                "qr": "/utility_company/Emerson_Utility Company_socalgas-delivers-clean-energy-for-[h2]-innovation-experience-en-861.png"
+            }],
+            "cart" : ["/green_diesel_facility/cart_Emerson_Green Diesel.jpg"]
+        }
+       },
+       
+       {
+        "Waste-To-Energy" : {
+            "book_type": "eBook",
+            "images" : [
+               [ "/gas/Emerson_Gas Processing_air-separation-e-book_page-0001.jpg",
+
+                                "/gas/Emerson_Gas Processing_air-separation-e-book_page-0011.jpg",
+                "/gas/Emerson_Gas Processing_air-separation-e-book_page-0016.jpg"
+
+            ]
+
+            ],
+            "files": [
+                "/gas/Emerson_Gas Processing_air-separation-e-book.pdf"
+
+            ],
+            "content" : [{
+                "main_title": "Gas Processing Plant", 
+                "title": "How to Improve Reliability and Safety in Air Separation Units",
+                "content": "<p>Because industrial gases are used as feedstock for many process manufacturers, operators need practical tips on how to ensure safety and reliability when using an onsite air separation unit to process these gases. </p><p> Access effective strategies by downloading this eBook.</p>",
+                "qr": "/gas/Emerson_Gas Processing_air-separation-e-book.png"
+            }]
+        }
+       },
+       
+       {
+        "Gas Power Plant" : {
+            "book_type": "Brochure",
+            "images" : [
+                [
+                "/gas_power_plant_rs/rs_br_1.jpg",
+			"/gas_power_plant_rs/rs_br_2.jpg",
+			"/gas_power_plant_rs/rs_br_3.jpg",
+			"/gas_power_plant_rs/rs_br_4.jpg",
+			"/gas_power_plant_rs/rs_br_5.jpg",
+			"/gas_power_plant_rs/rs_br_6.jpg",
+			"/gas_power_plant_rs/rs_br_7.jpg",
+			"/gas_power_plant_rs/rs_br_8.jpg",
+			"/gas_power_plant_rs/rs_br_9.jpg",
+			"/gas_power_plant_rs/rs_br_10.jpg",
+			"/gas_power_plant_rs/rs_br_11.jpg",
+			"/gas_power_plant_rs/rs_br_12.jpg",
+			"/gas_power_plant_rs/rs_br_13.jpg",
+			"/gas_power_plant_rs/rs_br_14.jpg",
+			"/gas_power_plant_rs/rs_br_15.jpg",
+			"/gas_power_plant_rs/rs_br_16.jpg",
+			"/gas_power_plant_rs/rs_br_17.jpg",
+			"/gas_power_plant_rs/rs_br_18.jpg",
+			"/gas_power_plant_rs/rs_br_19.jpg",
+			"/gas_power_plant_rs/rs_br_20.jpg",
+			"/gas_power_plant_rs/rs_br_21.jpg",
+			"/gas_power_plant_rs/rs_br_22.jpg",
+			"/gas_power_plant_rs/rs_br_23.jpg",
+			"/gas_power_plant_rs/rs_br_24.jpg",
+			"/gas_power_plant_rs/rs_br_25.jpg",
+			"/gas_power_plant_rs/rs_br_26.jpg",
+			"/gas_power_plant_rs/rs_br_27.jpg",
+			"/gas_power_plant_rs/rs_br_28.jpg",
+			"/gas_power_plant_rs/rs_br_29.jpg",
+			"/gas_power_plant_rs/rs_br_30.jpg",
+			"/gas_power_plant_rs/rs_br_31.jpg",
+			"/gas_power_plant_rs/rs_br_32.jpg",
+			"/gas_power_plant_rs/rs_br_33.jpg",
+			"/gas_power_plant_rs/rs_br_34.jpg",
+			"/gas_power_plant_rs/rs_br_35.jpg",
+			"/gas_power_plant_rs/rs_br_36.jpg",
+			"/gas_power_plant_rs/rs_br_37.jpg",
+			"/gas_power_plant_rs/rs_br_38.jpg",
+			"/gas_power_plant_rs/rs_br_39.jpg",
+			"/gas_power_plant_rs/rs_br_40.jpg",
+			"/gas_power_plant_rs/rs_br_41.jpg",
+			"/gas_power_plant_rs/rs_br_42.jpg",
+			"/gas_power_plant_rs/rs_br_43.jpg",
+			"/gas_power_plant_rs/rs_br_44.jpg",					
+            "/gas_power_plant_rs/rs_br_45.jpg",
+			"/gas_power_plant_rs/rs_br_46.jpg",
+			"/gas_power_plant_rs/rs_br_47.jpg",
+			"/gas_power_plant_rs/rs_br_48.jpg",
+			"/gas_power_plant_rs/rs_br_49.jpg",
+			"/gas_power_plant_rs/rs_br_50.jpg"
+            ], 
+            [
+            "/gas_power_plant_D353/D353481X012_1.jpg",
+            "/gas_power_plant_D353/D353481X012_2.jpg",
+            "/gas_power_plant_D353/D353481X012_3.jpg"
+            ]
+            ],
+            "files": [
+                "/gas_power_plant_rs/RS_BR_Reliability Solutions for Power Generation_1.pdf",
+                "/gas_power_plant_D353/D353481X012_Power Industry Application Map.pdf"
+            ],
+            "content" : [
+                {
+                    "main_title": "Gas Power Plant", 
+                    "title": "Achieve Higher Reliability in Power Generation with Reliabilty Solutions",
+                    "content": "<p>Interested in learning how to ensure safety, maintain compliance, and tackle staffing and cost concerns with smart, reliable solutions — even in remote locations? Discover how you can optimize your power generation assets with Emerson's AMS portfolio. </p><p>Download the brochure to gain insights on how to equip your teams with the ability to anticipate challenges, minimize downtime, and enhance performance. </p>",
+                    "qr": "/gas_power_plant_rs/Brochure_Reliability_Solutions_for_Power_Generation.png"
+                }, 
+                {
+                    "main_title": "Gas Power Plant", 
+                    "title": "Improve Production and Increase Reliability with Pressure Control Solutions",
+                    "content": "<p>Are you seeking solutions to help your plant maximize efficiency, cut costs, and enhance reliability? Find out how advanced pressure control solutions can help you optimize fuel systems, protect critical assets, and meet environmental regulations, while reducing downtime with remote monitoring. </p><p>Access the brochure to stay ahead with smarter pressure management.  </p>",
+                    "qr": "/gas_power_plant_D353/Power_Plant_Pressure_Control_Solutions_Application_Map.png"
+
+                }            
+            ],
+            "cart" : ["/gas_power_plant_rs/RS_BR_Reliability_cover.jpg", "/gas_power_plant_D353/D353481X012_1.jpg"]
+           
+        }
+       },
+       {
+        "Wind Power" : {
+            "book_type": "Brochure",
+            "images" : [
+                [
+                "/wind_power_ovation/ovation1.jpg",
+                "/wind_power_ovation/ovation2.jpg",                
+                "/wind_power_ovation/ovation3.jpg",                
+                "/wind_power_ovation/ovation4.jpg",                
+                "/wind_power_ovation/ovation5.jpg",                
+                "/wind_power_ovation/ovation6.jpg",                
+                "/wind_power_ovation/ovation7.jpg",                
+                "/wind_power_ovation/ovation8.jpg",                
+                "/wind_power_ovation/ovation9.jpg"   
+                ]
+
+            ],
+            "files": [
+                "/wind_power_ovation/Ovation Green Wind Turbine Condition Monitoring Solution Brochure.pdf"
+            ],
+            "content" : [
+                {
+                    "main_title": "Wind Power", 
+                    "title": "Reduce Costs and Downtime, and Maximize Energy Production using Ovation Green ",
+                    "content": "<p>Discover how you can maximize wind energy performance with Ovation Green's condition monitoring and vibration analysis. Learn how to leverage decades of expertise to enable predictive maintenance, reduce unplanned outages, and cut costs. </p><p> Download the brochure to access strategies for ensuring that your turbines run at peak efficiency with smarter scheduling and enhanced performance.  </p>",
+                    "qr": 
+                    "/wind_power_ovation/Ovation_Green_Wind_Turbine_Condition_Monitoring_Solution.png"
+                }
+            ],
+            "cart" : ["/wind_power_ovation/ovation1.jpg"]
+        }
+       },
+       {
+        "Solar Power" : {
+            "book_type": "Brochure",
+            "images" : [
+               [ 
+                "/solar_power/Emerson-Solar1.jpg",
+                "/solar_power/Emerson-Solar2.jpg",
+"/solar_power/Emerson-Solar3.jpg",
+"/solar_power/Emerson-Solar4.jpg",
+"/solar_power/Emerson-Solar5.jpg"
+            ]
+            ],
+            "files": [
+                "/solar_power/Emerson Solar Photovoltaic Solutions Brochure.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Solar Power", 
+                "title": "Maximize Production in Solar Energy Assets",
+                "content": "<p>Discover how to optimize PV plant performance with Ovation advanced automation. Designed for power generation, Ovation helps asset managers tackle challenges efficiently, respond rapidly to frequency events, and seamlessly manage diverse SCADA systems.  </p><p>Download the brochure to also find out how Emerson delivers a cost-effective approach for any plant size, enabling active power curtailment, grid stability, and maximum kWh output. </p>",
+                "qr": "/solar_power/Brochure_Emerson_Solar_Photovoltaic_Solutions.png"
+                }
+            ]
+        }
+       },
+       {
+        "Operations Control Center" : {
+            "book_type": "Brochure",
+            "images" : [
+
+               [ 
+                "/operations_control/ovation_auto1.jpg",
+"/operations_control/ovation_auto2.jpg",
+"/operations_control/ovation_auto3.jpg",
+"/operations_control/ovation_auto4.jpg",
+"/operations_control/ovation_auto5.jpg"
+                
+            ]
+
+            ],
+            "files": [
+                "/operations_control/Ovation Automation Technology Brochure.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Operations Control Center", 
+                "title": "Increase Operational Visibility Across Your Enterprise",
+                "content": "<p>Discover how to maximize efficiency and ensure reliability with Ovation™ automation software. Find out how secure remote access enhances response times, protects critical assets, and safeguards your team with built-in cybersecurity. </p><p> Access this brochure to stay ahead with smarter, more precise operations.  </p>",
+                "qr": "/operations_control/Brochure_Ovation_Automation_Technology.png"
+                }
+            ]
+        }
+       },
+
+       {
+        "Transmission" : {
+            "book_type": "Brochure",
+            "images" : [
+                [
+                "/transmission_at-3916/at_3916_1.jpg",
+                "/transmission_at-3916/at_3916_2.jpg",
+                "/transmission_at-3916/at_3916_3.jpg",
+                "/transmission_at-3916/at_3916_4.jpg",
+                "/transmission_at-3916/at_3916_5.jpg",
+                "/transmission_at-3916/at_3916_6.jpg"
+                ]
+            ],
+            "files": [
+                "/transmission_at-3916/AT-3916_BRO_EMS_DGM_v5.pdf"
+            ],
+            "content" : [
+                {
+                "main_title": "Transmission", 
+                "title": "Increase Resilience and Reliability",
+                "content": "<p>Supercharge your transmission grid with AspenTech OSI Energy Management System™. Discover how this powerful solution delivers real-time, reliable operations, offering efficient monitoring of complex networks, intelligent security tools to prevent and manage emergencies, and a training simulator for handling system events and restorations. </p><p> Download this brochure to learn how this transformative solution boosts grid performance and reliability!</p>",
+                "qr": "/transmission_at-3916/Brochure_AspenTech_Transmission_Management_Systems.png"
+
+                }
+            ]
+        }
+       },
+ {
+        "Distribution" : {
+            "book_type": "Brochure",
+            "images" : [
+                  [   
+                     "/distribution_at_3622/aspintech1.jpg",
+                     "/distribution_at_3622/aspintech2.jpg",
+                     "/distribution_at_3622/aspintech3.jpg",
+                     "/distribution_at_3622/aspintech4.jpg",
+                     "/distribution_at_3622/aspintech5.jpg",
+                     "/distribution_at_3622/aspintech6.jpg",
+                     "/distribution_at_3622/aspintech7.jpg",
+                     "/distribution_at_3622/aspintech8.jpg"
+            ]
+            ],
+            "files": [
+                      "/distribution_at_3622/AT-3622_BRO_ADMS_DGMv6.pdf"
+            ],
+            "content" : [
+                {
+                "main_title": "Distribution", 
+                "title": "Enable Resiliency and Operational Excellence through Intelligent Automation",
+                "content": "<p>Find out how you can transform your distribution grid with AspenTech OSI Advanced Distribution Management System™. With advanced outage and energy resource management tools, ADMS boosts safety, reliability, and efficiency. </p><p> Read this brochure to discover how to enhance your operations with real-time insights into power system conditions and outages.  </p>",
+                "qr": 
+                      "/distribution_at_3622/Brochure_AspenTech_OSI_Advanced_Distribution_Management_System.png"
+
+                }
+            ],
+            "cart": [ "/distribution_at_3622/aspintech1.jpg"]
+           
+        }
+       },
+       {
+        "Battery Energy Storage" : {
+            "book_type": "White Paper",
+            "images" : [
+              [  
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0001.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0002.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0003.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0004.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0005.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0006.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0007.jpg"
+            ]
+
+           ],
+            "files": [
+
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190.pdf"
+
+            ],
+            "content" : [{
+                "main_title": "Carbon Capture Sequestration", 
+                "title": "Advanced Automation Fuels the Growth of Carbon Capture as an Environmental Solution",
+                "content": "<p>Fossil fuels remain a major factor in the energy economy, but carbon capture can reduce their environmental impact. </p><p> Download this white paper to discover how advanced automation improves carbon capture and storage. You'll discover how to capture carbon from combustion, balance energy, and transport carbon dioxide once it is processed.</p>",
+                "qr": 
+
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental.png"
+
+            }],
+            "cart": ["/carbon_capture_sequestration/cart_Emerson_CC Sequestion.jpg"]
+        }
+       },
+       {
+        "Microgrid" : {
+            "book_type": "Brochure",
+            "images" : [
+              [  
+                "/microgrid/AT-4064_1.jpg", 
+                "/microgrid/AT-4064_2.jpg", 
+                "/microgrid/AT-4064_3.jpg", 
+                "/microgrid/AT-4064_4.jpg", 
+                "/microgrid/AT-4064_5.jpg", 
+                "/microgrid/AT-4064_6.jpg"
+            ]
+
+           ],
+            "files": [
+
+                "/microgrid/AT-4064 BRO AspenTech MMS.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Microgrid", 
+                "title": "Enhance Reliability, Efficiency, Scalability, and Cybersecurity",
+                "content": "<p>Maximize the reliability, availability, and security of your energy-critical assets with AspenTech Microgrid Management System™. Learn how you can efficiently manage renewable power, on-site storage, and cogeneration to enhance the performance and control of your electrical grid. </p> <p> Read this resource to discover how to empower your organization to take full charge of its energy needs!</p>",
+                "qr": 
+
+                "/microgrid/Brochure_AspenTech_Microgrid_Management_System.png"
+
+                }
+            ],
+            "cart": ["/microgrid/AT-4064_1.jpg"]
+        }
+       },
+       {
+        "Green Hydrogen Hub" : {
+            "book_type": "eBook",
+            "images" : [
+             [   
+                "/green_hydrogen_hub/green1.jpg",         
+                "/green_hydrogen_hub/green2.jpg", 
+                "/green_hydrogen_hub/green3.jpg", 
+                "/green_hydrogen_hub/green4.jpg", 
+                "/green_hydrogen_hub/green5.jpg", 
+                "/green_hydrogen_hub/green6.jpg", 
+                "/green_hydrogen_hub/green7.jpg", 
+                "/green_hydrogen_hub/green8.jpg", 
+                "/green_hydrogen_hub/green9.jpg", 
+                "/green_hydrogen_hub/green10.jpg", 
+                "/green_hydrogen_hub/green11.jpg", 
+                "/green_hydrogen_hub/green12.jpg", 
+                "/green_hydrogen_hub/green13.jpg", 
+                "/green_hydrogen_hub/green14.jpg", 
+                "/green_hydrogen_hub/green15.jpg", 
+                "/green_hydrogen_hub/green16.jpg", 
+                "/green_hydrogen_hub/green17.jpg"
+            ]
+
+
+           ],
+            "files": [
+
+                "/green_hydrogen_hub/Green-Hydrogen-eBook-Accelerating-the-Transition-to-Hydrogen-Fuel.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Green Hydrogen Hub", 
+                "title": " Achieve Optimal Green Hydrogen Systems",
+                "content": "<p>Ready to discover strategies for balancing supply and demand with hydrogen from renewable electricity? Learn about Emerson's flexible solution that supports both short- and long-duration energy storage, reducing system stress and enhancing grid reliability during peak demand. </p><p>Download this eBook to discover how to improve safety, efficiency, and resilience across the hydrogen value chain.  </p>",
+                "qr": 
+
+                "/green_hydrogen_hub/Brochure_Ovation_Automation_Technology.png"
+
+                }
+            ],
+            "cart": ["/green_hydrogen_hub/green1.jpg"]
+        }
+       },
+       {
+        "Distribuited Energy Resources" : {
+            "book_type": "White Paper",
+            "images" : [
+               [
+                 "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0001.jpg"            ]
+
+
+
+           ],
+            "files": [        
+
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Carbon Capture Sequestration", 
+                "title": "Advanced Automation Fuels the Growth of Carbon Capture as an Environmental Solution",
+                "content": "<p>Fossil fuels remain a major factor in the energy economy, but carbon capture can reduce their environmental impact. </p><p> Download this white paper to discover how advanced automation improves carbon capture and storage. You'll discover how to capture carbon from combustion, balance energy, and transport carbon dioxide once it is processed.</p>",
+                "qr": 
+
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental.png"
+
+                }
+            ],
+            "cart": ["/carbon_capture_sequestration/cart_Emerson_CC Sequestion.jpg"]
+        }
+       }
+
+    ],
+    "cases" : [
+        {
+            "Hydro Power Plant" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_Salto-Grande.jpg"]
+
+                ],
+                "files": [
+                   ["/lng_liquefaction/Case-Study_Venture-Global-LNG.pdf"]
+
+                ],
+                "titles": ["Emerson Selected to Modernize Hydroelectric Power Complex Ensuring Renewable Energy Supply in Latin America"],
+                "index": 0
+            }
+        },
+        {
+            "Coal Power Plant" :{
+                "images" : [
+                   [ "/case_studies/Industry-Case-Studies_Minnkota-Power.jpg"]                
+
+                ],
+                "files": [
+                    "/wind_fields/Case-Study_GVEA.pdf"
+
+                ],
+                "titles": [
+                    "Minnkota Power Cooperative Enhanced Ramp Rates and Grid Stability With Emerson's Ovation Automation Platform"],
+                "index": 1
+            }
+        },
+        {
+            "Nuclear Power Plant" :{
+                "images" : [
+                   [ "/case_studies/Industry-Case-Studies_Power-Generation-Company-EUR.jpg"]
+                ],
+                "files": [
+                    ["/refinery/Case-Study_Fintoil-Biorefinery.pdf"]
+                ],
+                "titles": ["Nuclear Power Plant in Europe Selects Emerson Solutions for Safety and Reliability"],
+                "index": 2
+            }
+        },
+       
+        {
+            "Geothermal Power Plant" :{
+                "images" : [
+                    
+               [ "/case_studies/Industry-Case-Studies_Maren.jpg"]
+
+                ],
+                "files": [
+                    
+                ["/chemical_plant/Case-Study_ReNew-ELP-Plastics.pdf"]
+
+                ],
+                "titles": ["Maren Geothermal Plant Improves Hot Brine Flow Measurement Reliability With Rosemount™ Magnetic Flow Meter"],
+                "index": 3
+            }
+        }, 
+        {
+            "Waste-To-Energy" :{
+                "images" : [
+                  [  "/case_studies/Industry-Case-Studies_Elektrownia-Stalowa.jpg"]
+
+                ],
+                "files": [
+                   [ "/refueling_station/Case-Study_H2-Hauler.pdf"]
+
+                ],
+                "titles": ["Emerson's WirelessHART™ Transmitters Monitor Biomass Gasification Pre-combustion Chamber at Polish Power Plant "],
+                "index": 4
+            }
+        },
+        {
+            "Gas Power Plant" :{
+                "images" : [
+                     ["/case_studies/Industry-Case-Studies_Power-Generation-Company-USA.jpg"]
+
+                ],
+                "files": [
+                     "/evb_recycling_facility/Case-Study_SungEel-HiTech.pdf"
+
+                ],
+                "titles": ["US Power Plant Saves $1 Million USD with Emerson's Diagnostic Services"],
+                "index": 5
+            }
+        },
+        {
+            "Wind Power" :{
+                "images" : [
+       [ "/case_studies/Case-Study_GVEA.jpg"]
+
+                ],
+                "files": [
+                    ["/power_plant/Case-Study_EPH-Lynemouth-Power.pdf"]
+
+                ],
+                "titles": ["Helping Alaska's Largest Wind Farm Provide Clean Energy"],
+                "index": 6
+            }
+        },
+        {
+            "Solar Power" :{
+                "images" : [
+                   [ "/case_studies/Industry-Case-Studies_Green-Hydrogen-Company.jpg"]
+
+                ],
+                "files": [
+                    ["/offshore/Case-Study_Equinor.pdf"]
+
+                ],
+                "titles": ["Emerson PACSystems™ Controllers Enable Reliable Performance in 1.2GW Solar Plant in Abu Dhabi - One of the Largest in the World"],
+                "index": 7
+            }
+        },
+       
+       
+        {
+            "Operations Control Center" :{
+                "images" : [
+                   [ "/case_studies/Industry-Case-Studies_AES-Gener.jpg"]
+                ],
+                "files": [
+                   [ "/green_diesel_facility/Case-Study_AltAir-Paramount-LLC.pdf"]
+                ],
+                "titles": ["Ovation Enables AES Gener to Efficiently Manage a Diversified Energy Mix via Remote Operations Center"],
+                "index": 8
+            }
+        }, 
+        {
+            "Transmission" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_PNM.jpg"]
+
+                ],
+                "files": [
+                   [ "/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["PNM Uses Real-Time, Transmission DERMS to Decarbonize Generation Portfolio"],
+                "index": 9
+            }
+        }
+        , 
+        {
+            "Distribution" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_GIUD.jpg"]
+
+                ],
+                "files": [
+                   [ "/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["City of Grand Island, Nebraska Reduces Overhead Costs Using Digital Outage Management"],
+                "index": 10
+            }
+        }
+        , 
+        {
+            "Battery Energy Storage" :{
+                "images" : [
+                   [ "/case_studies/Industry-Case-Studies_Nor-Cal-Controls.jpg"]
+
+                ],
+                "files": [
+                    ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["Nor-Cal Controls Uses PACSystems™ RX3i Control System for Solar Power Storage Site Transformation"],
+                "index": 11
+            }
+        }
+        , 
+        {
+            "Microgrid" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_UT.jpg"]
+
+                ],
+                "files": [
+                   [ "/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["Real-time optimization of utility production and delivery system at University of Texas at Austin (UT-Austin)"],
+                "index": 12
+            }
+        }
+        , 
+        {
+            "Green Hydrogen Hub" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_Mitsubishi-Power.jpg"]
+
+                ],
+                "files": [
+                    ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["Mitsubishi Power Selects Emerson Software and Technologies for Advanced Clean Energy Storage Hydrogen Hub"],
+                "index": 13
+            }
+        }
+        , 
+        
+        {
+            "Distributed Energy Resources" :{
+                "images" : [
+                    ["/case_studies/Industry-Case-Studies_SMUD.jpg"]
+
+                ],
+                "files": [
+                    ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
+
+                ],
+                "titles": ["Integrated DER Management Enables SMUD® to Meet Aggressive Clean Energy Goals"],
+                "index": 14
+            }
+        }
+    ],
+    "url": "https://emerson.clientdemos.net/emails/requestHandler.php",
+    "eloquaUrl": "https://emerson.clientdemos.net/emails/EloquaPod.php",
+    "testUrl": "https://emails.test/requestHandler.php",
+    "mode": "",
+    "video_bg": "/Power Digital Experience Background 6600x2434.mp4"
+}

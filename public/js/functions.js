@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", async() => {
     addNextEvent();
     addPrevEvent();
     inactiveTime();
-    //hidePrev();
+    //f();
+    //addEbookHotspots();
+    
 });
 
   
@@ -101,9 +103,10 @@ let panz = "";
 let evHandler = "";
 let bgAsset = "";
 let videobg = "";
-
+let next = document.querySelector(".next-page");
 let cartIndexes = [];
-
+let index = 0;
+let oldPage;
 
 function isTouchDevice() {
     return (('ontouchstart' in window) ||
@@ -200,6 +203,7 @@ function resetApp(){
     //close everything else
     hideActiveSidebars();
     resetMenubar();
+    formReset();
     clearCart();
 }
 
@@ -348,23 +352,72 @@ function loadPanzoom(){
        
     });
 */
+
+    _panzoom.on('zoom', function(e){
+         let _bubble = document.querySelector(".bubble");
+            if(_bubble){
+                //remove if one is found
+               _bubble.remove();
+            }
+    })
+}
+
+function debounce(func, timeout = 1500){
+  let timer;
+  return (...args) => {
+    clearTimeout(timer);
+    timer = setTimeout(() => { func.apply(this, args); }, timeout);
+  };
+}
+
+
+function saveInput(views, e, _page){
+        //console.log('Current view: ', $(this).turn('view'), _page);
+        totalPages.innerHTML = currentImages.length;
+                
 }
 
 //--- load turnjs
 function loadTurnjs(id, displayMode){
+ 
+    currentPage = 1;
+    s = 0;
+
     let oTurn = $(`#${id}`).turn({
         display: displayMode,
         acceleration: true,
         gradients: !$.isTouch,
         elevation:90,
+     
         when: {
             turned: function(e, _page) {
-                //console.log('Current view: ', $(this).turn('view'), _page);
-                //page.innerHTML = $(this).turn('view')[0] + "-" + $(this).turn('view')[1];
-                //
-                //page.innerHTML = _page -1 + "-" + (parseInt(_page) + 1);
-                //currentPage = _page;
+              /*
+              //new arrows functionality
+              const processChange = debounce(() => saveInput($(this).turn('view'), e, _page));
+              processChange(); 
+              
+              
+              */
+
+
+
+               //old stuff
+               console.log('Current view: ', $(this).turn('view'), _page);
+           
+                page.style.opacity = 0;
+
+           
+                if($(this).turn('view')[1] != 0){
+                  page.innerHTML = $(this).turn('view')[0] + "-" + $(this).turn('view')[1];
+                }else{
+                  page.innerHTML = $(this).turn('view')[0];
+                }
                 
+                //page.innerHTML = _page -1 + "-" + 1;
+                currentPage = _page;
+                
+                console.log(e)
+
                 totalPages.innerHTML = currentImages.length;
                 if($(this).turn('view')[0] == 0){
                     prevArrow.style.opacity = 0;
@@ -372,16 +425,53 @@ function loadTurnjs(id, displayMode){
                     prevArrow.style.opacity = 1;
                 }
 
-                //console.log(currentImages.length)
+                console.log($(this).turn('view')[1], currentImages.length)
 
                 if($(this).turn('view')[1] == currentImages.length){
                     nextArrow.style.opacity = 0;
+                    nextArrow.style.pointerEvents = 'none';
+                   
                 }else{
                     nextArrow.style.opacity = 1;
+                    nextArrow.style.pointerEvents = 'all';
+                  
                 }
-            }   
+
+                if($(this).turn('view')[1] == 0){
+                    nextArrow.style.opacity = 0;
+                    nextArrow.style.pointerEvents = 'none';
+                   
+                }else{
+                    nextArrow.style.opacity = 1;
+                    nextArrow.style.pointerEvents = 'all';
+                   
+                }
+
+               
+                setTimeout((e) => {
+
+                    page.style.opacity = 1;
+                    totalPages.style.opacity = 1;
+                }, 500) 
+
+
+            }
         }
     });
+   
+/*
+    //new arrows functionality
+    $(`.test-elem`).click(function(e){
+        e.preventDefault();
+        oTurn.turn("previous");
+    })
+
+
+    $(`.test-elem2`).click(function(e){
+        e.preventDefault();
+        oTurn.turn("next");
+    })
+
 
     $(".prev-page").click(function(e){
         e.preventDefault();
@@ -391,11 +481,40 @@ function loadTurnjs(id, displayMode){
     
     $(".next-page").click(function(e){
         e.preventDefault();
-            oTurn.turn("next");
+        oTurn.turn("next");
         
     });
 
     prevArrow.style.opacity = 0;
+
+    if(selectedAsset !== 'resources'){
+        nextArrow.style.opacity = 0;
+    }
+
+    prevArrow.addEventListener(evHandler, (e) => {
+        e.preventDefault();
+        oTurn.turn("previous");
+    });
+
+    nextArrow.addEventListener(evHandler, (e) => {
+        e.preventDefault();
+        oTurn.turn("next");
+    });
+    
+    */
+
+    //old stuff 
+     $(".prev-page").click(function(e){
+        e.preventDefault();
+        oTurn.turn("previous");
+
+    });
+    
+    $(".next-page").click(function(e){
+        e.preventDefault();
+        oTurn.turn("next");
+    });
+   
 
     if(selectedAsset !== 'resources'){
         nextArrow.style.opacity = 0;
@@ -412,51 +531,52 @@ function loadTurnjs(id, displayMode){
         e.preventDefault();
         oTurn.turn("next");
     });
+
 }
 
 
-function addPrevEvent(){
-    
-    let prev = document.querySelector(".prev-page");
-    prev.addEventListener(evHandler, () => {
-       
+/*
+
+function addEbookHotspots(){
+
+     let testElem = document.querySelector(".test-elem");
+     testElem.addEventListener(evHandler, (e) => {
+        if(page.innerHTML == '1'){
+            return;
+        }
+
         if(page.innerHTML == '0-1'){
-            return
+            return;
         }
 
         if(currentPage == 1) {
             page.innerHTML = 0 + "-" + 1;
-            //prev.style.pointerEvents = 'none';
+            prev.style.pointerEvents = 'none';
         }else{
+           // page.style.opacity = 0;
            s = s - 2;
            //console.log("_____>: ", s)
            page.innerHTML = s + "-" + (s+ 1);
          
         }
         currentPage--;
-    })
-   
-
-    prevArrow.addEventListener(evHandler, () => {
-        if(currentPage == 1) {
-            page.innerHTML = 0 + "-" + 1;
-        }else{
-           s = s - 2;
-           //console.log("_____>: ", s)
-           page.innerHTML = s + "-" + (s+ 1);
          
-        }
-        currentPage--;
-    })
-}
+    });
 
-function addNextEvent(){
-    let next = document.querySelector(".next-page");
-    let prev = document.querySelector(".prev-page");
-    next.addEventListener(evHandler, () => {
+    let testElem2 = document.querySelector(".test-elem2");
+    testElem2.addEventListener(evHandler, (e) => {
+       
+        console.log(e)
+        e.stopPropagation();
+        
         let total = totalPages.innerHTML;
         console.log("----------->",total)
-        //console.log(currentPage, s)
+        console.log(currentPage, s)
+    
+        if(total == 1){
+            return;
+        }
+
         if(currentPage == 1) {
             s = 2;
             page.innerHTML = s + "-" + (s+1);
@@ -467,6 +587,7 @@ function addNextEvent(){
            if(page.innerHTML.includes(total)){
                 console.log("DONE")
            }else{
+            //page.style.opacity = 0;
             s = s + 2;
            
             if((s+1) == parseInt(total) || (s) == parseInt(total)){
@@ -482,26 +603,148 @@ function addNextEvent(){
            }
 
         }
+           
+        currentPage++;
+     
+        
+    });
+    
+}
+
+
+
+function addPrevEvent(){
+    
+    let prev = document.querySelector(".prev-page");
+    prev.addEventListener(evHandler, () => {
+
+        if(page.innerHTML == '1'){
+            return;
+        }
+
+        if(page.innerHTML == '0-1'){
+            return;
+        }
+
+        if(currentPage == 1) {
+            page.innerHTML = 0 + "-" + 1;
+            prev.style.pointerEvents = 'none';
+        }else{
+           // page.style.opacity = 0;
+           s = s - 2;
+           //console.log("_____>: ", s)
+           page.innerHTML = s + "-" + (s+ 1);
+         
+        }
+        currentPage--;
+    
+        })
+   
+
+    prevArrow.addEventListener(evHandler, () => {
+        
+        if(page.innerHTML == '1'){
+            return;
+        }
+        
+        if(page.innerHTML == '0-1'){
+            return
+        }
+
+        if(currentPage == 1) {
+            
+            page.innerHTML = 0 + "-" + 1;
+            prev.style.pointerEvents = 'none';
+        }else{
+           // page.style.opacity = 0;
+           s = s - 2;
+           //console.log("_____>: ", s)
+           page.innerHTML = s + "-" + (s+ 1);
+         
+        }
+        currentPage--;
+    
+        })
+}
+
+function addNextEvent(){
+    let next = document.querySelector(".next-page");
+    let prev = document.querySelector(".prev-page");
+    next.addEventListener(evHandler, () => {
+        let total = totalPages.innerHTML;
+        console.log("----------->",total)
+        console.log(currentPage, s)
+    
+        if(total == 1){
+            return;
+        }
+
+        if(currentPage == 1) {
+            s = 2;
+            page.innerHTML = s + "-" + (s+1);
+            //prev.style.display = 'block';
+        }else{
+            //prev.style.pointerEvents = 'all';
+
+           if(page.innerHTML.includes(total)){
+                console.log("DONE")
+           }else{
+            //page.style.opacity = 0;
+            s = s + 2;
+           
+            if((s+1) == parseInt(total) || (s) == parseInt(total)){
+                //console.log("TOTAL: ", s);
+                if (total % 2 == 0){
+                   page.innerHTML = total;
+                }else{
+                   page.innerHTML = s + "-" + (s+ 1);
+                }
+            }else{
+                page.innerHTML = s + "-" + (s+ 1);
+              }
+           }
+
+        }
+           
         currentPage++;
     });
 
     nextArrow.addEventListener(evHandler, () => {
         let total = totalPages.innerHTML;
-        //console.log(currentPage, s)
+        console.log("----------->",total)
+        console.log(currentPage, s)
+        
+        if(total == 1){
+            return;
+        }
+
         if(currentPage == 1) {
             s = 2;
             page.innerHTML = s + "-" + (s+1);
+            //prev.style.display = 'block';
         }else{
-          
-           s = s + 2;
-           //console.log(s+1, "TOTAL: ", total)
-           if((s+1) == parseInt(total) || (s) == parseInt(total)){
-             console.log("TOTAL: ", s);
-             page.innerHTML = total;
+            //prev.style.pointerEvents = 'all';
+
+           if(page.innerHTML.includes(total)){
+                console.log("DONE")
+              
            }else{
-             page.innerHTML = s + "-" + (s+ 1);
+           // page.style.opacity = 0;
+            s = s + 2;
+           
+            if((s+1) == parseInt(total) || (s) == parseInt(total)){
+                //console.log("TOTAL: ", s);
+                if (total % 2 == 0){
+                   page.innerHTML = total;
+                }else{
+                   page.innerHTML = s + "-" + (s+ 1);
+                }
+            }else{
+                page.innerHTML = s + "-" + (s+ 1);
+                
+              }
            }
-          
+
         }
         currentPage++;
     })
@@ -509,11 +752,13 @@ function addNextEvent(){
 }
 
 
+
 function hidePrev(){
     let prev = document.querySelector(".prev-page");
     prev.style.display = 'none';
 }
 
+*/
 
 //--- init digital keyboard
 function initKeyboard(){
@@ -697,7 +942,7 @@ async function showBubble(elementType, name, index, configIndex, element){
         bubble.style.left = x + "px";
     }
    
-    bubble.style.top = y + "px";
+    bubble.style.top = (y + 35) + "px";
     //append the bubble
     //zone.appendChild(bubble);
     document.body.append(bubble);
@@ -810,9 +1055,13 @@ async function generateFlipbookContent(images, type, filename, innerIdx){
     
     //turn js displayMode
     let displayMode = 'single';
-    let _flipbook = _wrapper.querySelector(".flipbook");
+     let _flipbook = _wrapper.querySelector(".flipbook");
+     if(_flipbook){
     console.log(_wrapper.querySelector(".flipbook"))
     _wrapper.removeChild(_flipbook);
+     }
+    
+  
     //check if content was added
     let _content = _wrapper.querySelector(".modal-content");
     if(_content ){
@@ -1140,12 +1389,16 @@ function sendUserRequest(request){
 //--- shows/hides the sidebars
 function toggleSidebars(){
     handles.map(handle => {
-        handle.addEventListener(evHandler, (e) => {
+        handle.addEventListener("click", (e) => {
             e.stopPropagation();
            let parent = e.target.parentNode;
            toggleShowClass(parent);
            resetMenubar();
-            
+             let _bubble = document.querySelector(".bubble");
+            if(_bubble){
+                //remove if one is found
+               _bubble.remove();
+            }
         });
     });
 }
@@ -1161,7 +1414,7 @@ function hideActiveSidebars(){
 //--- adds events to the left sidebar elements
 function addEventsToTypes(){
     types.map(type => {
-        type.addEventListener(evHandler, (e) => {
+        type.addEventListener('click', (e) => {
             e.stopPropagation();
            let currentType = type.getAttribute('data-type');    
            selectedAsset = currentType;    
@@ -1295,12 +1548,12 @@ function closeModal(){
 
     let _wrapperChild = document.querySelector("._wrapper .flipbook");
     _wrapperChild.style.pointerEvents = 'none';
-
-
+  
     console.log(page.innerHTML, s, currentPage)
     console.log("RESET PAGES VALUES: ");
     page.innerHTML = 0 + "-" + 1;
     currentPage = 1;
+  
     s = 0;
 }
 
@@ -1324,7 +1577,7 @@ function toggleSidebarOnAssetClick(action, time){
             typesSelector.style.display = 'none';
             //show the assets sidebar
             if(selectedAsset == 'resources'){
-              //  sidebar.classList.add('widen');
+                sidebar.classList.add('widen');
             }
            
             typesAssets.classList.add('show');
@@ -1332,7 +1585,20 @@ function toggleSidebarOnAssetClick(action, time){
         }, time);
     }
         
+     let _bubble = document.querySelector(".bubble");
+            if(_bubble){
+                //remove if one is found
+               _bubble.remove();
+            }
 }
+
+function f(){
+    typesAssets.addEventListener(evHandler, (e) => {
+        e.stopPropagation();
+    })
+
+}
+
 
 function addEventToMapHotspots(){
     
@@ -1360,6 +1626,10 @@ function addEventToMapHotspots(){
             resetMenubar();
         }
     });
+}
+
+function formReset(){
+    form.reset();
 }
 
 function resetMenubar(){

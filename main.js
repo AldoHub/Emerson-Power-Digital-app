@@ -8,7 +8,7 @@ const fs = require("node:fs");
 var config = {}; 
 
 // run this as early in the main process as possible
-if (require('electron-squirrel-startup')) app.quit();
+//if (require('electron-squirrel-startup')) app.quit();
 
 //create the main window
 const createWindow = async() => {
@@ -34,7 +34,7 @@ app.whenReady().then(async() => {
     //--- FILES NEED TO BE A LEVER UP FROM THE ROOT FOLDER
 
     //read config file
-    let config = path.join(__dirname , ".." , '/config.json');
+    let config = path.join(__dirname , '/config.json');
     console.log(config)
     fs.readFile(config, 'utf-8', (err, data) => {
         if(err){
@@ -47,7 +47,7 @@ app.whenReady().then(async() => {
     });
     
     //check the images folder
-    let imagesPath = path.join(__dirname , ".." , '/assets/');
+    let imagesPath = path.join(__dirname , '/assets/');
     
     if(fs.existsSync(imagesPath)){
         ipcMain.handle('files', () => imagesPath)
@@ -56,7 +56,7 @@ app.whenReady().then(async() => {
     }
 
     //background video
-    let bgPath = path.join(__dirname , "..", '/bg/');
+    let bgPath = path.join(__dirname , '/bg/');
     
     if(fs.existsSync(bgPath)){
         ipcMain.handle('bgpath', () => bgPath)
