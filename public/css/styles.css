@@ -748,6 +748,11 @@ video {
     left: 27.5%;
 }
 
+.cpp-hotspot-resource {
+    top: 36.5%;
+    left: 12%;
+}
+
 .cpp-hotspot-case {
     top: 36.5%;
     left: 22.5%;
@@ -836,6 +841,11 @@ video {
 .dist-hotspot-case {
     top: 43%;
     left: 76.3%;
+}
+
+.bes-hotspot-resource {
+    top: 49.5%;
+    left: 66.8%;
 }
 
 .bes-hotspot-case {
@@ -1196,6 +1206,12 @@ video {
         left: 27.5%;
     }
     
+    .cpp-hotspot-resource {
+    top: 37%;
+    left: 12.5%;
+}   
+
+
     .cpp-hotspot-case {
         top: 36.7%;
         left: 22.5%;
@@ -1285,6 +1301,11 @@ video {
         top: 43.8%;
         left: 76.5%;
     }
+
+    .bes-hotspot-resource {
+   top: 50.5%;
+    left: 67%;
+}
     
     .bes-hotspot-case {
         top: 50.5%;

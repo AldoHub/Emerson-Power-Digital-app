@@ -33,25 +33,30 @@
             "Coal Power Plant" : {
                 "book_type": "eBook",
                 "images" : [
-                    ["/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-1.jpg",
-                    "/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-2.jpg",
-                    "/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-3.jpg",
-                    "/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-4.jpg",
-                    "/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-5.jpg",
-                    "/ovation_advanced/Ovation-Advanced-Power-Applications---Performance-Optimization-Software-Brochure-6.jpg"
-                    ]
+                    ["/evb/Lithium-Batteries-eBook-1.jpg",
+                    "/evb/Lithium-Batteries-eBook-2.jpg",
+                    "/evb/Lithium-Batteries-eBook-3.jpg",
+                    "/evb/Lithium-Batteries-eBook-4.jpg",
+                    "/evb/Lithium-Batteries-eBook-5.jpg",
+                    "/evb/Lithium-Batteries-eBook-6.jpg",
+                    "/evb/Lithium-Batteries-eBook-7.jpg",
+                    "/evb/Lithium-Batteries-eBook-8.jpg",
+                    "/evb/Lithium-Batteries-eBook-9.jpg",
+                    "/evb/Lithium-Batteries-eBook-10.jpg",
+                    "/evb/Lithium-Batteries-eBook-11.jpg",
+                    "/evb/Lithium-Batteries-eBook-12.jpg",
+                    "/evb/Lithium-Batteries-eBook-13.jpg"]
                     
                 ],
                 "files": [
-                    "/ovation_advanced/Ovation Advanced Power Applications - Performance Optimization Software Brochure.pdf"
-
+                    "/evb/Lithium-Batteries-eBook.pdf"
                 ],
                 "content" :[ 
                     {
-                    "main_title": "Coal Power Plant", 
-                    "title": "Maintain Reliable and Optimal Plant Operation with Ovation Performance Optimization Software",
-                    "content": "<p>Enhance plant efficiency, reduce emissions, and boost profitability with Ovation™ advanced power applications. Download the brochure to discover how Emerson and AspenTech deliver measurable outcomes—from edge to enterprise—enabling safer, more sustainable operations, improved reliability, and increased returns.</p>",
-                    "qr": "/ovation_advanced/Brochure_Ovation_Advanced_Power_Applications.png"
+                    "main_title": "Electric Vehicle Battery Manufacturing", 
+                    "title": "Ensure Safety and Optimized Production of Lithium Batteries",
+                    "content": "<p>With the lithium-ion battery industry evolving rapidly, manufacturers must overcome challenges associated with mining, refining, battery component manufacturing, and battery cell production. That's why they need access to advanced control, increased process visibility, and actionable information for improved decision-making. </p><p> Download the eBook for insights.</p>",
+                    "qr": "/evb/Emerson_EVB Manufacturing_Lithium eBook_2022_EN_Final.png"
                     }
                 ]
             }
@@ -296,24 +301,11 @@
                 "/wind_power_ovation/ovation7.jpg",                
                 "/wind_power_ovation/ovation8.jpg",                
                 "/wind_power_ovation/ovation9.jpg"   
-                ], 
-                [
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-1.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-2.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-3.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-4.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-5.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-6.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-7.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-8.jpg",
-                "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-9.jpg"
-
                 ]
 
             ],
             "files": [
-                "/wind_power_ovation/Ovation Green Wind Turbine Condition Monitoring Solution Brochure.pdf",
-                "/ovation_green_wind/Ovation Green Wind Turbine Condition Monitoring Solution Brochure.pdf"
+                "/wind_power_ovation/Ovation Green Wind Turbine Condition Monitoring Solution Brochure.pdf"
             ],
             "content" : [
                 {
@@ -322,16 +314,9 @@
                     "content": "<p>Discover how you can maximize wind energy performance with Ovation Green's condition monitoring and vibration analysis. Learn how to leverage decades of expertise to enable predictive maintenance, reduce unplanned outages, and cut costs. </p><p> Download the brochure to access strategies for ensuring that your turbines run at peak efficiency with smarter scheduling and enhanced performance.  </p>",
                     "qr": 
                     "/wind_power_ovation/Ovation_Green_Wind_Turbine_Condition_Monitoring_Solution.png"
-                },
-                {
-                    "main_title": "Wind Power", 
-                    "title": "Extend Turbine Life and Reduce Unplanned Downtime with Predictive Maintenance",
-                    "content": "<p>With Emerson’s Ovation™ Green Wind Turbine Condition Monitoring solution, you can catch early signs of wear before they become costly failures. From gearboxes to generator bearings, our predictive maintenance tools give you the power to act fast, extend asset life, and keep energy flowing. Download the brochure to see how smarter insights lead to stronger performance—and bigger returns.</p>",
-                    "qr": 
-                    "/ovation_green_wind/Brochure_Ovation_Green_Wind_Turbine_Condition_Monitoring_Solution.png"
                 }
             ],
-            "cart" : ["/wind_power_ovation/ovation1.jpg", "/ovation_green_wind/Ovation-Green-Wind-Turbine-Condition-Monitoring-Solution-Brochure-1.jpg"]
+            "cart" : ["/wind_power_ovation/ovation1.jpg"]
         }
        },
        {
@@ -344,28 +329,10 @@
 "/solar_power/Emerson-Solar3.jpg",
 "/solar_power/Emerson-Solar4.jpg",
 "/solar_power/Emerson-Solar5.jpg"
-            ],
-            ["/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-1.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-2.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-3.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-4.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-5.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-6.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-7.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-8.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-9.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-10.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-11.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-12.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-13.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-14.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-15.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-16.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-17.jpg" ]
+            ]
             ],
             "files": [
-                "/solar_power/Emerson Solar Photovoltaic Solutions Brochure.pdf",
-                "/ovation_green/Ovation Green Solar PV and Battery Energy Storage Solutions.pdf"
+                "/solar_power/Emerson Solar Photovoltaic Solutions Brochure.pdf"
 
             ],
             "content" : [
@@ -374,12 +341,6 @@
                 "title": "Maximize Production in Solar Energy Assets",
                 "content": "<p>Discover how to optimize PV plant performance with Ovation advanced automation. Designed for power generation, Ovation helps asset managers tackle challenges efficiently, respond rapidly to frequency events, and seamlessly manage diverse SCADA systems.  </p><p>Download the brochure to also find out how Emerson delivers a cost-effective approach for any plant size, enabling active power curtailment, grid stability, and maximum kWh output. </p>",
                 "qr": "/solar_power/Brochure_Emerson_Solar_Photovoltaic_Solutions.png"
-                },
-                {
-                "main_title": "Solar Power", 
-                "title": "Improve Availability and Reduce Costs with Ovation Green Solar PV and Battery Energy Storage Solutions",
-                "content": "<p>Maximize the performance and profitability of your solar PV assets with Emerson’s Ovation™ Green solutions. Designed for precision and scalability, our platform delivers real-time insights and intelligent control to help you increase energy output, streamline operations, and drive long-term value. Download the brochure to explore how you can elevate your solar strategy with confidence.</p>",
-                "qr": "/ovation_green/Brochure_Ovation_Green_Solar_PV_and_Battery_Energy_Storage_Solutions.png"
                 }
             ]
         }
@@ -478,39 +439,31 @@
             "book_type": "White Paper",
             "images" : [
               [  
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-1.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-2.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-3.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-4.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-5.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-6.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-7.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-8.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-9.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-10.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-11.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-12.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-13.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-14.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-15.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-16.jpg", 
-                "/ovation_green/Ovation-Green-Solar-PV-and-Battery-Energy-Storage-Solutions-17.jpg" 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0001.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0002.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0003.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0004.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0005.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0006.jpg", 
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0007.jpg"
             ]
 
            ],
             "files": [
 
-                "/ovation_green/Ovation Green Solar PV and Battery Energy Storage Solutions.pdf"
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190.pdf"
 
             ],
             "content" : [{
-                "main_title": "Battery Energy Storage", 
-                "title": "Low-Risk Solutions that Improve Availability and Reduce Costs",
-                "content": "<p>Looking to enhance the performance and control of your battery energy storage systems? Emerson’s Ovation™ Green solutions deliver real-time insights and intelligent control to help you optimize performance, increase efficiency, and boost revenue. Download the brochure to see how you can make smarter decisions and scale with confidence.</p>",
+                "main_title": "Carbon Capture Sequestration", 
+                "title": "Advanced Automation Fuels the Growth of Carbon Capture as an Environmental Solution",
+                "content": "<p>Fossil fuels remain a major factor in the energy economy, but carbon capture can reduce their environmental impact. </p><p> Download this white paper to discover how advanced automation improves carbon capture and storage. You'll discover how to capture carbon from combustion, balance energy, and transport carbon dioxide once it is processed.</p>",
                 "qr": 
-                "/ovation_green/Brochure_Ovation_Green_Solar_PV_and_Battery_Energy_Storage_Solutions.png"
-            }]
-           
+
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental.png"
+
+            }],
+            "cart": ["/carbon_capture_sequestration/cart_Emerson_CC Sequestion.jpg"]
         }
        },
        {
@@ -546,18 +499,64 @@
             "cart": ["/microgrid/AT-4064_1.jpg"]
         }
        },
-       
+       {
+        "Green Hydrogen Hub" : {
+            "book_type": "eBook",
+            "images" : [
+             [   
+                "/green_hydrogen_hub/green1.jpg",         
+                "/green_hydrogen_hub/green2.jpg", 
+                "/green_hydrogen_hub/green3.jpg", 
+                "/green_hydrogen_hub/green4.jpg", 
+                "/green_hydrogen_hub/green5.jpg", 
+                "/green_hydrogen_hub/green6.jpg", 
+                "/green_hydrogen_hub/green7.jpg", 
+                "/green_hydrogen_hub/green8.jpg", 
+                "/green_hydrogen_hub/green9.jpg", 
+                "/green_hydrogen_hub/green10.jpg", 
+                "/green_hydrogen_hub/green11.jpg", 
+                "/green_hydrogen_hub/green12.jpg", 
+                "/green_hydrogen_hub/green13.jpg", 
+                "/green_hydrogen_hub/green14.jpg", 
+                "/green_hydrogen_hub/green15.jpg", 
+                "/green_hydrogen_hub/green16.jpg", 
+                "/green_hydrogen_hub/green17.jpg"
+            ]
+
+
+           ],
+            "files": [
+
+                "/green_hydrogen_hub/Green-Hydrogen-eBook-Accelerating-the-Transition-to-Hydrogen-Fuel.pdf"
+
+            ],
+            "content" : [
+                {
+                "main_title": "Green Hydrogen Hub", 
+                "title": " Achieve Optimal Green Hydrogen Systems",
+                "content": "<p>Ready to discover strategies for balancing supply and demand with hydrogen from renewable electricity? Learn about Emerson's flexible solution that supports both short- and long-duration energy storage, reducing system stress and enhancing grid reliability during peak demand. </p><p>Download this eBook to discover how to improve safety, efficiency, and resilience across the hydrogen value chain.  </p>",
+                "qr": 
+
+                "/green_hydrogen_hub/Brochure_Ovation_Automation_Technology.png"
+
+                }
+            ],
+            "cart": ["/green_hydrogen_hub/green1.jpg"]
+        }
+       },
        {
         "Distribuited Energy Resources" : {
             "book_type": "White Paper",
             "images" : [
                [
-                 "/ovation_green/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0001.jpg"            ]
+                 "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190_page-0001.jpg"            ]
+
+
 
            ],
             "files": [        
 
-                "/ovation_green/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190.pdf"
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental-solution-en-10087190.pdf"
 
             ],
             "content" : [
@@ -567,11 +566,11 @@
                 "content": "<p>Fossil fuels remain a major factor in the energy economy, but carbon capture can reduce their environmental impact. </p><p> Download this white paper to discover how advanced automation improves carbon capture and storage. You'll discover how to capture carbon from combustion, balance energy, and transport carbon dioxide once it is processed.</p>",
                 "qr": 
 
-                "/ovation_green/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental.png"
+                "/carbon_capture_sequestration/Emerson_CC Sequestion_advanced-automation-fuels-growth-of-carbon-capture-as-an-environmental.png"
 
                 }
             ],
-            "cart": ["/ovation_green/cart_Emerson_CC Sequestion.jpg"]
+            "cart": ["/carbon_capture_sequestration/cart_Emerson_CC Sequestion.jpg"]
         }
        }
 
@@ -580,7 +579,7 @@
         {
             "Hydro Power Plant" :{
                 "images" : [
-                    ["/case_studies/Hydro - Salto Grande.jpg"]
+                    ["/case_studies/Industry-Case-Studies_Salto-Grande.jpg"]
 
                 ],
                 "files": [
@@ -594,28 +593,27 @@
         {
             "Coal Power Plant" :{
                 "images" : [
-                    [ "/case_studies/Coal - Rawhide Digital Twin.jpg"]
-                 
-                 
+                   [ "/case_studies/Industry-Case-Studies_Minnkota-Power.jpg"]                
+
                 ],
                 "files": [
                     "/wind_fields/Case-Study_GVEA.pdf"
 
                 ],
                 "titles": [
-                    "Rawhide Energy Station Reduces Simulated Startup and Shutdown Time by 44% with Ovation™ Digital Twin Simulation"],
+                    "Minnkota Power Cooperative Enhanced Ramp Rates and Grid Stability With Emerson's Ovation Automation Platform"],
                 "index": 1
             }
         },
         {
             "Nuclear Power Plant" :{
                 "images" : [
-                   [ "/case_studies/Nuclear - Westinghouse.jpg"]
+                   [ "/case_studies/Industry-Case-Studies_Power-Generation-Company-EUR.jpg"]
                 ],
                 "files": [
                     ["/refinery/Case-Study_Fintoil-Biorefinery.pdf"]
                 ],
-                "titles": ["Westinghouse Suppliers Meet with U.S Congress in Support for AP1000 Projects Globally"],
+                "titles": ["Nuclear Power Plant in Europe Selects Emerson Solutions for Safety and Reliability"],
                 "index": 2
             }
         },
@@ -653,14 +651,14 @@
         {
             "Gas Power Plant" :{
                 "images" : [
-                     ["/case_studies/Gas - Georgia Power.jpg"]
+                     ["/case_studies/Industry-Case-Studies_Power-Generation-Company-USA.jpg"]
 
                 ],
                 "files": [
-                     "/ovation_advanced_recycling_facility/Case-Study_SungEel-HiTech.pdf"
+                     "/evb_recycling_facility/Case-Study_SungEel-HiTech.pdf"
 
                 ],
-                "titles": ["Emerson to Modernize Georgia Power Plant for Realiable, Affordable Energy"],
+                "titles": ["US Power Plant Saves $1 Million USD with Emerson's Diagnostic Services"],
                 "index": 5
             }
         },
@@ -681,14 +679,14 @@
         {
             "Solar Power" :{
                 "images" : [
-                   [ "/case_studies/Solar - Lodestone.jpg"]
+                   [ "/case_studies/Industry-Case-Studies_Green-Hydrogen-Company.jpg"]
 
                 ],
                 "files": [
                     ["/offshore/Case-Study_Equinor.pdf"]
 
                 ],
-                "titles": ["Lodestone Energy Uses Emerson's Ovation™ Automation Platform to Help Ensure Safety and Reliability of New Zealand's First Large-Scale Solar PV Project"],
+                "titles": ["Emerson PACSystems™ Controllers Enable Reliable Performance in 1.2GW Solar Plant in Abu Dhabi - One of the Largest in the World"],
                 "index": 7
             }
         },
@@ -739,14 +737,14 @@
         {
             "Battery Energy Storage" :{
                 "images" : [
-                   [ "/case_studies/Battery Energy Storage - B&M West Texas Trio.jpg"]
+                   [ "/case_studies/Industry-Case-Studies_Nor-Cal-Controls.jpg"]
 
                 ],
                 "files": [
                     ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
 
                 ],
-                "titles": ["Texas Trio Battery Storage Facilities Address Grid Stability in West Texas Wind Resource Area"],
+                "titles": ["Nor-Cal Controls Uses PACSystems™ RX3i Control System for Solar Power Storage Site Transformation"],
                 "index": 11
             }
         }
@@ -769,7 +767,7 @@
         {
             "Green Hydrogen Hub" :{
                 "images" : [
-                    ["/case_studies/Green Hydrogen - Mitsubishi Power.jpg"]
+                    ["/case_studies/Industry-Case-Studies_Mitsubishi-Power.jpg"]
 
                 ],
                 "files": [
@@ -797,134 +795,6 @@
             }
         }
     ],
-    "additional cases" : [
-         {
-            "Nuclear Power Plant" :{
-                "images" : [
-                   [ "/case_studies/Industry-Case-Studies_Power-Generation-Company-EUR.jpg"]
-                ],
-                "files": [
-                    ["/refinery/Case-Study_Fintoil-Biorefinery.pdf"]
-                ],
-                "titles": ["Nuclear Power Plant in Europe Selects Emerson Solutions for Safety and Reliability"],
-                "index": 2
-            }
-        },
-        {
-            "Coal Power Plant" :{
-                "images" : [
-                 [ "/case_studies/Industry-Case-Studies_Minnkota-Power.jpg"]
-                
-                ],
-                "files": [
-                    "/wind_fields/Case-Study_GVEA.pdf"
-
-                ],
-                "titles": [
-                    "Minnkota Power Cooperative Enhanced Ramp Rates and Grid Stability With Emerson's Ovation Automation Platform"],
-                "index": 1
-            }
-        },
-        {
-            "Gas Power Plant" :{
-                "images" : [
-                     ["/case_studies/Industry-Case-Studies_Power-Generation-Company-USA.jpg"]
-
-                ],
-                "files": [
-                     "/ovation_advanced_recycling_facility/Case-Study_SungEel-HiTech.pdf"
-
-                ],
-                "titles": ["US Power Plant Saves $1 Million USD with Emerson's Diagnostic Services"],
-                "index": 5
-            }
-        },
-        {
-            "Solar Power" :{
-                "images" : [
-                   [ "/case_studies/Industry-Case-Studies_Green-Hydrogen-Company.jpg"]
-
-                ],
-                "files": [
-                    ["/offshore/Case-Study_Equinor.pdf"]
-
-                ],
-                "titles": ["Emerson PACSystems™ Controllers Enable Reliable Performance in 1.2GW Solar Plant in Abu Dhabi - One of the Largest in the World"],
-                "index": 7
-            }
-        },
-         {
-            "Battery Energy Storage" :{
-                "images" : [
-                   [ "/case_studies/Industry-Case-Studies_Nor-Cal-Controls.jpg"]
-
-                ],
-                "files": [
-                    ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
-
-                ],
-                "titles": ["Nor-Cal Controls Uses PACSystems™ RX3i Control System for Solar Power Storage Site Transformation"],
-                "index": 11
-            }
-        },
-        {
-            "Gas Power Plant" :{
-                "images" : [
-                     ["/case_studies/Gas - Ovation Gas.jpg"]
-
-                ],
-                "files": [
-                     "/ovation_advanced_recycling_facility/Case-Study_SungEel-HiTech.pdf"
-
-                ],
-                "titles": ["Utility Slashes Fuel Use at Large Power Generating Unit Using Emerson's Combined Cycle Optimization Strategies"],
-                "index": 5
-            }
-        },
-          {
-            "Green Hydrogen Hub" :{
-                "images" : [
-                    ["/case_studies/Green Hydrogen - Intermountain Hydrogen.jpg"]
-
-                ],
-                "files": [
-                    ["/blue_hydrogen/Case-Study_Enbridge-Gas.pdf"]
-
-                ],
-                "titles": ["Emerson Software Helps Intermountain Power Agency Delivery Carbon-Free Power"],
-                "index": 13
-            }
-        },
-          {
-            "Waste-To-Energy" :{
-                "images" : [
-                  [  "/case_studies/Waste to Energy - Allerton.jpg"]
-
-                ],
-                "files": [
-                   [ "/refueling_station/Case-Study_H2-Hauler.pdf"]
-
-                ],
-                "titles": ["Emerson to Automate Waste-to-Energy Plant That Will Help UK Meet European Renewable Energy Targets"],
-                "index": 4
-            }
-        },
-         {
-            "Hydro Power Plant" :{
-                "images" : [
-                    ["/case_studies/Hydro - SRP Hydro.jpg"]
-
-                ],
-                "files": [
-                   ["/lng_liquefaction/Case-Study_Venture-Global-LNG.pdf"]
-
-                ],
-                "titles": ["Emerson to Modernize Controls for Hydro Fleet Serving Phoenix Metro Area"],
-                "index": 0
-            }
-        }
-    ],
-
     "url": "https://emerson.clientdemos.net/emails/requestHandler.php",
     "eloquaUrl": "https://emerson.clientdemos.net/emails/EloquaPod.php",
     "testUrl": "https://emails.test/requestHandler.php",

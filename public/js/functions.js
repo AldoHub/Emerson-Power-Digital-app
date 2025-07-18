@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", async() => {
     await fetchConfig();
     await fetchAssets();
     await bgPath();
+    getFirstFiveCases();
     loadVideoBg();
     loadPanzoom();
     initKeyboard();
@@ -21,8 +22,8 @@ document.addEventListener("DOMContentLoaded", async() => {
     stopPropagationOnModal();
     setFullscreen();
     checkScreenChange();
-    addNextEvent();
-    addPrevEvent();
+    //addNextEvent();
+    //addPrevEvent();
     inactiveTime();
     //f();
     //addEbookHotspots();
@@ -107,6 +108,10 @@ let next = document.querySelector(".next-page");
 let cartIndexes = [];
 let index = 0;
 let oldPage;
+
+let additional_cases;
+//first five specified items
+let first_five = [];
 
 function isTouchDevice() {
     return (('ontouchstart' in window) ||
@@ -251,18 +256,19 @@ function setFullscreen(){
 //--- fetch the app configuration
 async function fetchConfig(){
     if(window.versions){
-     let response = await window.versions.config();
-     config = JSON.parse(response);
-     //console.log("------------>", config);
-     if(config["mode"] == 'test'){
-        url = config["testUrl"];
-     }else{
-        url = config["url"];
-     }
-     //eloqua
-     EloquaUrl = config["eloquaUrl"];
+        let response = await window.versions.config();
+        config = JSON.parse(response);
+        console.log("------------>", config);
+        if(config["mode"] == 'test'){
+            url = config["testUrl"];
+        }else{
+            url = config["url"];
+        }
+        //eloqua
+        EloquaUrl = config["eloquaUrl"];
 
-     videobg = config['video_bg'];
+        videobg = config['video_bg'];
+        additional_cases = config["additional cases"]
     }
     else{
         //alert("No configuration file found!");
@@ -277,6 +283,7 @@ async function fetchConfig(){
         
         videobg = config['video_bg'];
         EloquaUrl = config["eloquaUrl"];
+        additional_cases = config["additional cases"]
         console.log(url);
     }
 }
@@ -518,6 +525,7 @@ function loadTurnjs(id, displayMode){
 
     if(selectedAsset !== 'resources'){
         nextArrow.style.opacity = 0;
+        prevArrow.style.opacity = 0;
     }
 
     prevArrow.addEventListener(evHandler, (e) => {
@@ -973,7 +981,7 @@ async function showBubble(elementType, name, index, configIndex, element){
 //--- displays the modal on item click
 async function showModal(type, name, index, configIndex, innerIdx){
   
-    //console.log(type, name, index, configIndex, innerIdx)
+    console.log(type, name, index, configIndex, innerIdx)
     
     toggleShowClass(modal); 
    
@@ -1073,7 +1081,7 @@ async function generateFlipbookContent(images, type, filename, innerIdx){
     let randomN = Date.now();
     _w.setAttribute("id", randomN);
     _w.classList.add('flipbook')
-    if(type == 'cases'){
+    if(type == 'cases' || type == 'additional cases'){
         _w.classList.add('case-aspect-ratio');
     }else{
         _w.classList.add('instructions');
@@ -1434,14 +1442,83 @@ function addEventsToTypes(){
     });    
 }
 
+//---- get the fist five selected items from the datasource 
+function getFirstFiveCases(){
+   
+    let _cases = config['cases']
+
+    _cases.map((item) => {
+        let key = Object.keys(item)[0];
+        
+        if(key == 'Coal Power Plant' || key == 'Nuclear Power Plant' || key == 'Gas Power Plant' || key == 'Solar Power' || key == 'Battery Energy Storage'){
+            first_five.push(item);
+        }
+    });
+  
+}
+
 //--- generates the content for the sidebar
 function generateContentForType(currentType){
-   
+  
     typesAssets.innerHTML = '';
     //get the type data inside the config
     let dataItems = config[currentType];
 
     //console.log("------------>: ", dataItems)
+    
+   //set the first five selected items on the cases
+    if(currentType == 'cases') {
+        first_five.map((item, idx) => {
+          let key = Object.keys(item)[0];
+          //match the correct index on the config
+          let index; 
+          if(key == 'Coal Power Plant') {
+            index = 1;
+          }
+          if(key == 'Nuclear Power Plant') {
+            index = 2;
+          }
+          if(key == 'Gas Power Plant') {
+            index = 5;
+          }
+          if(key == 'Solar Power') {
+            index = 7;
+          }
+          if(key == 'Battery Energy Storage') {
+            index = 11;
+          }
+                   
+          let contents = item[key]['titles'];
+          console.log(item[key])
+          contents.map((c, i) => {
+                let _n = c;
+                typeText = _n;
+                generateNavLinks(key, null, undefined, typeText, currentType, index, 0);
+            })
+               
+        })
+    }
+
+    //add additional cases if the type is "cases" - old cases, still relevant
+    if(currentType == 'cases') {
+       
+        //console.log("------------>: ", additional_cases)
+
+        additional_cases.map((item, idx) => {
+            console.log(item);
+            //get the keys
+            let key = Object.keys(item)[0];
+            let contents = item[key]['titles'];
+             contents.map((c, i) => {
+                let _n = c;
+                typeText = _n;
+                
+                generateNavLinks(key, null, undefined, typeText, "additional cases", idx, 0);
+            })
+        })
+    }
+    
+
 
     dataItems.map((item, idx) => {
      
@@ -1454,7 +1531,7 @@ function generateContentForType(currentType){
         
         if(currentType == 'resources'){
            
-            if(key == 'Coal Power Plant' || key == 'Waste-To-Energy' || key == 'Battery Energy Storage' || key == 'Distribuited Energy Resources' || key == 'Geothermal Power Plant' ){
+            if(key == 'Waste-To-Energy' || key == 'Distribuited Energy Resources' || key == 'Geothermal Power Plant' ){
                 console.log(`skipping ${key}`);
             }else{
                 let contents = item[key]["content"];
@@ -1466,17 +1543,26 @@ function generateContentForType(currentType){
                 });
             }
         }else{
-            //let caseIndex = (idx + 1) < 10 ? '0' + (idx + 1) : (idx + 1);
-            let contents = item[key]['titles'];
-            
-            contents.map((c, i) => {
-                let _n = c;
-                typeText = _n;
-                generateNavLinks(key, null, book_type, typeText, currentType, idx, 0);
-            })
+
+            //skip the next items
+            if(key == 'Coal Power Plant' || key == 'Nuclear Power Plant' || key == 'Gas Power Plant' || key == 'Solar Power' || key == 'Battery Energy Storage'){
+               console.log(`skipping ${key}`);
+            }else{
+                //let caseIndex = (idx + 1) < 10 ? '0' + (idx + 1) : (idx + 1);
+                let contents = item[key]['titles'];
+                //console.log("KEY ----------> ", key)
+
+                contents.map((c, i) => {
+                    let _n = c;
+                    typeText = _n;
+                    
+                    generateNavLinks(key, null, book_type, typeText, currentType, idx, 0);
+                })
+            }
+
+          
             
         }
-
     });
     
 }
@@ -1509,6 +1595,7 @@ function generateNavLinks(key, file, book_type, typeText, currentType, idx, inne
         //toggleSidebarWidth();
         hideActiveSidebars();
         toggleShowClass(overlay);   
+        console.log(name, type, index, innerIdx)
         //    showModal(elementType, name, configIndex, null, 0);
         showModal(type, name, index, null, innerIdx);
     });
